@@ -1,0 +1,94 @@
+================================================================================
+         APPSUMO PRODUCT LISTING DATA — UNIVERSAL CONVERTER PRO
+================================================================================
+Salin (Copy-Paste) data di bawah ini langsung ke formulir AppSumo Partner Portal:
+URL Portal: https://sell.appsumo.com/ atau https://appsumo.com/partners/
+
+--------------------------------------------------------------------------------
+1. INFORMASI PRODUK UTAMA (BASIC INFO)
+--------------------------------------------------------------------------------
+Product Name:
+Universal Document & Image Converter Pro
+
+Short Tagline (One-liner pitch):
+Ultra-fast, 100% offline batch document & image converter with zero cloud privacy risks.
+
+Product Website URL:
+https://universalpdfsoft.github.io/doc-converter-pro/
+
+Customer Support Email:
+universalpdfsoft@gmail.com (atau email Anda yang digunakan di GitHub)
+
+Categories:
+Productivity, Utilities, Desktop Software, PDF & Document Management
+
+Target Audience:
+Accountants, lawyers, freelancers, agencies, remote teams, and privacy-conscious professionals who handle sensitive documents daily.
+
+--------------------------------------------------------------------------------
+2. DESKRIPSI PRODUK (LONG DESCRIPTION / OVERVIEW)
+--------------------------------------------------------------------------------
+Stop uploading your confidential company documents, contracts, and private client files to random online web converters. 
+
+Universal Document & Image Converter Pro is a lightning-fast, enterprise-grade desktop utility that runs 100% offline on your Windows PC. Convert, merge, split, compress, and extract documents and images in bulk with zero lag and zero privacy risks.
+
+Key Highlights:
+• 100% Offline & Private: No cloud uploads, no external server processing, and zero data tracking. Your files never leave your computer.
+• 50+ Format Conversions: Convert seamlessly between PDF, DOCX, XLSX, PPTX, JPG, PNG, WEBP, TIFF, BMP, SVG, and more.
+• Multi-Threaded Batch Processing: Queue hundreds of files and convert them simultaneously in seconds.
+• Complete PDF Toolkit: Merge multiple documents, split specific page ranges, compress bloated file sizes, and extract high-resolution images.
+• Optical Character Recognition (OCR): Extract editable text from scanned documents and photo images.
+• Ultra-Lightweight: Minimal CPU and RAM footprint, starts instantly, and runs reliably on Windows 7, 8, 10, and 11.
+
+--------------------------------------------------------------------------------
+3. REDEMPTION & FULFILLMENT SETUP (BAGIAN VOUCHER & AKTIVASI)
+--------------------------------------------------------------------------------
+Fulfillment Type:
+Select: "Static Codes" (or "Upload CSV")
+
+Redemption / Activation URL:
+https://universalpdfsoft.github.io/doc-converter-pro/redeem.html
+
+Product Download URL:
+https://github.com/universalpdfsoft/doc-converter-pro/releases/download/v1.0.0/UniversalConverterPro_Setup.exe
+
+Redemption Instructions for Buyers (Instruksi Aktivasi untuk Pembeli):
+1. Download and run the Windows installer from: https://github.com/universalpdfsoft/doc-converter-pro/releases/download/v1.0.0/UniversalConverterPro_Setup.exe
+2. Launch Universal Converter Pro and click "Activate Pro" (key icon).
+3. Click "Open AppSumo Redeem Portal" — the portal will open in your browser with your PC's unique Hardware ID (HWID) automatically pre-filled.
+4. Enter your AppSumo voucher code and email address, then click "Generate Lifetime License Key".
+5. Copy the generated RSA-2048 serial key and paste it back into the software activation box.
+6. Click "Activate" — your software is permanently unlocked for lifetime offline use!
+
+Upload Voucher Codes (CSV File):
+Upload file: e:\pdf\SIAP_UPLOAD_APPSUMO\appsumo_codes.csv
+(File ini berisi 1.000 kode voucher unik siap pakai).
+
+--------------------------------------------------------------------------------
+4. PAKET PRICING & TIERS (LIFETIME DEAL)
+--------------------------------------------------------------------------------
+Tier 1 — Single User ($29 USD Lifetime)
+• Lifetime access to Universal Document & Image Converter Pro
+• 1 PC / Device activation
+• All 50+ conversion formats & batch mode
+• Complete PDF toolkit & OCR
+• Lifetime software updates included
+
+Tier 2 — Team / Multi-Device ($59 USD Lifetime)
+• Everything in Tier 1
+• 5 PC / Device activations (Ideal for small offices or multiple laptops)
+• Commercial use license
+
+Tier 3 — Agency / VIP ($99 USD Lifetime)
+• Everything in Tier 1 & Tier 2
+• Unlimited PC activations
+• Priority support & early access to new converter modules
+
+--------------------------------------------------------------------------------
+5. ASSET GAMBAR (SUDAH TERSEDIA DI FOLDER e:\pdf\SIAP_UPLOAD_APPSUMO)
+--------------------------------------------------------------------------------
+- Logo / App Icon   : logo.png (atau app.ico)
+- Banner / Cover Art: banner.png
+- Screenshots       : Buka aplikasinya, lalu tekan tombol [Print Screen] / Snipping Tool 
+                      untuk mengambil screenshot tampilan konversi saat aplikasi berjalan.
+================================================================================

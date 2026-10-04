@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AppSumo License Redemption Portal — Universal Converter Pro</title>
+  <meta name="description" content="Redeem your AppSumo voucher code to instantly generate your Lifetime Pro license key for Universal Document & Image Converter Pro.">
+  <link rel="icon" type="image/x-icon" href="app.ico">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg-dark: #090d16;
+      --bg-card: #111827;
+      --bg-card-subtle: #1e293b;
+      --bg-input: #0b1120;
+      --border-dark: #1f293d;
+      --border-focus: #ffbe00;
+      --appsumo-yellow: #ffbe00;
+      --appsumo-yellow-hover: #e6ab00;
+      --primary: #4f46e5;
+      --primary-hover: #4338ca;
+      --accent-green: #10b981;
+      --accent-red: #ef4444;
+      --text-main: #f8fafc;
+      --text-muted: #94a3b8;
+      --text-subtle: #64748b;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: var(--bg-dark);
+      color: var(--text-main);
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      overflow-x: hidden;
+    }
+
+    /* Ambient Glow Effects */
+    .ambient-glow-1 {
+      position: fixed;
+      top: -150px;
+      left: 20%;
+      width: 600px;
+      height: 600px;
+      background: radial-gradient(circle, rgba(255, 190, 0, 0.12) 0%, rgba(79, 70, 229, 0.08) 50%, transparent 70%);
+      pointer-events: none;
+      z-index: 0;
+      filter: blur(80px);
+    }
+
+    .ambient-glow-2 {
+      position: fixed;
+      bottom: -150px;
+      right: 15%;
+      width: 500px;
+      height: 500px;
+      background: radial-gradient(circle, rgba(79, 70, 229, 0.15) 0%, rgba(16, 185, 129, 0.05) 50%, transparent 70%);
+      pointer-events: none;
+      z-index: 0;
+      filter: blur(80px);
+    }
+
+    .container {
+      max-width: 1040px;
+      margin: 0 auto;
+      padding: 0 24px;
+      position: relative;
+      z-index: 1;
+    }
+
+    /* Header */
+    header {
+      border-bottom: 1px solid var(--border-dark);
+      background: rgba(17, 24, 39, 0.7);
+      backdrop-filter: blur(12px);
+      padding: 16px 0;
+    }
+
+    .header-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .brand-wrap {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      text-decoration: none;
+    }
+
+    .brand-logo {
+      width: 44px;
+      height: 44px;
+      border-radius: 10px;
+    }
+
+    .brand-text h1 {
+      font-family: 'Outfit', sans-serif;
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: #fff;
+    }
+
+    .brand-text span {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+    }
+
+    .appsumo-partner-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(255, 190, 0, 0.12);
+      border: 1px solid rgba(255, 190, 0, 0.35);
+      padding: 6px 14px;
+      border-radius: 20px;
+      font-size: 0.78rem;
+      font-weight: 700;
+      color: var(--appsumo-yellow);
+      letter-spacing: 0.5px;
+    }
+
+    .appsumo-partner-badge .taco-icon {
+      font-size: 1rem;
+    }
+
+    /* Main Content */
+    main {
+      flex: 1;
+      padding: 48px 0 64px;
+    }
+
+    .hero-title-wrap {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .hero-pill {
+      display: inline-block;
+      background: #1e1b4b;
+      border: 1px solid #4338ca;
+      color: #a5b4fc;
+      font-size: 0.8rem;
+      font-weight: 600;
+      padding: 4px 14px;
+      border-radius: 100px;
+      margin-bottom: 14px;
+    }
+
+    .hero-title {
+      font-family: 'Outfit', sans-serif;
+      font-size: 2.3rem;
+      font-weight: 800;
+      color: #fff;
+      line-height: 1.25;
+      margin-bottom: 12px;
+    }
+
+    .hero-title .highlight {
+      background: linear-gradient(135deg, #ffbe00 0%, #ff8800 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .hero-subtitle {
+      color: var(--text-muted);
+      font-size: 1.05rem;
+      max-width: 620px;
+      margin: 0 auto;
+      line-height: 1.6;
+    }
+
+    /* Redemption Grid */
+    .redemption-grid {
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: 32px;
+      align-items: start;
+    }
+
+    @media (max-width: 860px) {
+      .redemption-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-dark);
+      border-radius: 16px;
+      padding: 32px;
+      box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.5);
+    }
+
+    .card-header {
+      margin-bottom: 24px;
+      padding-bottom: 16px;
+      border-bottom: 1px solid var(--border-dark);
+    }
+
+    .card-header h2 {
+      font-family: 'Outfit', sans-serif;
+      font-size: 1.35rem;
+      font-weight: 700;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .card-header p {
+      color: var(--text-muted);
+      font-size: 0.88rem;
+      margin-top: 4px;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    .form-label {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.88rem;
+      font-weight: 600;
+      color: var(--text-main);
+      margin-bottom: 8px;
+    }
+
+    .form-label .label-hint {
+      font-size: 0.76rem;
+      color: var(--text-muted);
+      font-weight: normal;
+    }
+
+    .input-wrap {
+      position: relative;
+    }
+
+    .form-input, .form-select {
+      width: 100%;
+      background: var(--bg-input);
+      border: 1px solid var(--border-dark);
+      border-radius: 10px;
+      padding: 12px 16px;
+      color: #fff;
+      font-size: 0.95rem;
+      font-family: inherit;
+      transition: all 0.2s ease;
+    }
+
+    .form-input.code-font {
+      font-family: 'JetBrains Mono', monospace;
+      letter-spacing: 1px;
+      font-weight: 600;
+    }
+
+    .form-input:focus, .form-select:focus {
+      outline: none;
+      border-color: var(--appsumo-yellow);
+      box-shadow: 0 0 0 3px rgba(255, 190, 0, 0.18);
+    }
+
+    .form-input::placeholder {
+      color: var(--text-subtle);
+    }
+
+    .hwid-badge-notice {
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+      margin-top: 6px;
+      font-size: 0.78rem;
+      color: var(--text-muted);
+      line-height: 1.4;
+    }
+
+    .btn-redeem {
+      width: 100%;
+      background: linear-gradient(135deg, #ffbe00 0%, #e6a000 100%);
+      color: #090d16;
+      border: none;
+      border-radius: 10px;
+      padding: 15px;
+      font-size: 1.05rem;
+      font-weight: 800;
+      font-family: 'Outfit', sans-serif;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      transition: all 0.2s ease;
+      box-shadow: 0 8px 20px -4px rgba(255, 190, 0, 0.4);
+      margin-top: 10px;
+    }
+
+    .btn-redeem:hover {
+      background: linear-gradient(135deg, #ffc926 0%, #f0aa0a 100%);
+      transform: translateY(-2px);
+      box-shadow: 0 12px 24px -4px rgba(255, 190, 0, 0.5);
+    }
+
+    .btn-redeem:disabled {
+      opacity: 0.6;
+      cursor: not-allowed;
+      transform: none;
+    }
+
+    /* Result Box */
+    .result-box {
+      margin-top: 24px;
+      padding: 24px;
+      border-radius: 12px;
+      background: #0f172a;
+      border: 1px solid #22c55e;
+      display: none;
+      animation: fadeIn 0.4s ease;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .result-title {
+      font-size: 1rem;
+      font-weight: 700;
+      color: #4ade80;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 12px;
+    }
+
+    .key-display {
+      background: #020617;
+      border: 1px dashed #334155;
+      border-radius: 8px;
+      padding: 14px;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.82rem;
+      color: #38bdf8;
+      word-break: break-all;
+      user-select: all;
+      margin-bottom: 14px;
+      line-height: 1.5;
+    }
+
+    .btn-copy-key {
+      width: 100%;
+      background: #1e293b;
+      color: #fff;
+      border: 1px solid #334155;
+      padding: 11px;
+      border-radius: 8px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      transition: all 0.2s;
+    }
+
+    .btn-copy-key:hover {
+      background: #334155;
+      border-color: #64748b;
+    }
+
+    .next-step-hint {
+      margin-top: 14px;
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      line-height: 1.5;
+      padding-top: 12px;
+      border-top: 1px solid #1e293b;
+    }
+
+    /* Right Column: Steps & Download */
+    .steps-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-dark);
+      border-radius: 16px;
+      padding: 30px;
+    }
+
+    .steps-card h3 {
+      font-family: 'Outfit', sans-serif;
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .step-item {
+      display: flex;
+      gap: 16px;
+      margin-bottom: 22px;
+    }
+
+    .step-number {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      background: #1e1b4b;
+      border: 1px solid #4338ca;
+      color: #818cf8;
+      font-weight: 700;
+      font-size: 0.9rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .step-content h4 {
+      font-size: 0.92rem;
+      font-weight: 700;
+      color: var(--text-main);
+      margin-bottom: 4px;
+    }
+
+    .step-content p {
+      font-size: 0.82rem;
+      color: var(--text-muted);
+      line-height: 1.5;
+    }
+
+    .download-installer-box {
+      margin-top: 28px;
+      padding: 20px;
+      background: var(--bg-card-subtle);
+      border: 1px solid var(--border-dark);
+      border-radius: 12px;
+    }
+
+    .download-installer-box h4 {
+      font-size: 0.9rem;
+      font-weight: 700;
+      margin-bottom: 6px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .download-installer-box p {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      margin-bottom: 14px;
+    }
+
+    .btn-download-app {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      width: 100%;
+      background: #4f46e5;
+      color: #fff;
+      padding: 11px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 0.88rem;
+      transition: background 0.2s;
+    }
+
+    .btn-download-app:hover {
+      background: #4338ca;
+    }
+
+    .guarantee-badge {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-top: 20px;
+      padding: 12px;
+      border-radius: 8px;
+      background: rgba(16, 185, 129, 0.08);
+      border: 1px solid rgba(16, 185, 129, 0.25);
+      font-size: 0.78rem;
+      color: #6ee7b7;
+    }
+
+    /* Footer */
+    footer {
+      border-top: 1px solid var(--border-dark);
+      padding: 24px 0;
+      margin-top: auto;
+      text-align: center;
+      font-size: 0.8rem;
+      color: var(--text-subtle);
+    }
+
+    footer a {
+      color: var(--text-muted);
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Ambient Glow -->
+  <div class="ambient-glow-1"></div>
+  <div class="ambient-glow-2"></div>
+
+  <!-- Header -->
+  <header>
+    <div class="container header-inner">
+      <a href="index.html" class="brand-wrap">
+        <img src="logo.png" alt="Logo" class="brand-logo">
+        <div class="brand-text">
+          <h1>Universal Converter Pro</h1>
+          <span>Official AppSumo Redemption Portal</span>
+        </div>
+      </a>
+      <div class="appsumo-partner-badge">
+        <span class="taco-icon">🌮</span>
+        <span>AppSumo Lifetime Deal</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Section -->
+  <main>
+    <div class="container">
+      <div class="hero-title-wrap">
+        <span class="hero-pill">⚡ Instant Self-Service Activation</span>
+        <h2 class="hero-title">Redeem Your <span class="highlight">AppSumo Lifetime</span> License</h2>
+        <p class="hero-subtitle">
+          Enter your AppSumo voucher code and Device Hardware ID (HWID) below to generate your cryptographically signed Lifetime Pro serial key immediately.
+        </p>
+      </div>
+
+      <div class="redemption-grid">
+        <!-- Form Column -->
+        <div class="card">
+          <div class="card-header">
+            <h2>🔑 License Generator Form</h2>
+            <p>100% automated RSA-2048 verification. No waiting required.</p>
+          </div>
+
+          <form id="redeemForm" onsubmit="handleRedeem(event)">
+            <div class="form-group">
+              <label class="form-label" for="appsumoCode">
+                <span>AppSumo Voucher Code:</span>
+                <span class="label-hint">From your AppSumo order receipt</span>
+              </label>
+              <div class="input-wrap">
+                <input type="text" id="appsumoCode" class="form-input code-font" 
+                       placeholder="e.g. AS-XXXX-YYYY-ZZZZ" required autocomplete="off"
+                       style="text-transform: uppercase;">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="buyerEmail">
+                <span>Your Email Address:</span>
+                <span class="label-hint">For license backup & support</span>
+              </label>
+              <div class="input-wrap">
+                <input type="email" id="buyerEmail" class="form-input" 
+                       placeholder="name@company.com" required autocomplete="email">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="hardwareId">
+                <span>Device Hardware ID (HWID):</span>
+                <span class="label-hint">Found inside the software</span>
+              </label>
+              <div class="input-wrap">
+                <input type="text" id="hardwareId" class="form-input code-font" 
+                       placeholder="e.g. A1AF-9630-2186-DCF1" required autocomplete="off">
+              </div>
+              <div class="hwid-badge-notice">
+                <span>💡</span>
+                <span>Open <strong>Universal Converter Pro</strong> &rarr; click <strong>"Activate Pro"</strong> &rarr; click <strong>"Copy HWID"</strong>.</span>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="licenseTier">
+                <span>AppSumo Plan Tier:</span>
+              </label>
+              <select id="licenseTier" class="form-select">
+                <option value="APPSUMO_TIER_1">Tier 1: Single PC Lifetime License (1 Device)</option>
+                <option value="APPSUMO_TIER_2">Tier 2: Multi-PC Lifetime License (5 Devices)</option>
+                <option value="APPSUMO_LIFETIME" selected>Tier 3 / Lifetime VIP License</option>
+              </select>
+            </div>
+
+            <button type="submit" class="btn-redeem" id="btnSubmit">
+              <span>🚀 Generate Lifetime License Key</span>
+            </button>
+          </form>
+
+          <!-- Result Area -->
+          <div class="result-box" id="resultBox">
+            <div class="result-title">
+              <span>✅</span>
+              <span>Lifetime License Key Generated Successfully!</span>
+            </div>
+            <div class="key-display" id="generatedKeyDisplay"></div>
+            <button type="button" class="btn-copy-key" id="btnCopyKey" onclick="copyGeneratedKey()">
+              <span>📋 Copy Serial Key</span>
+            </button>
+            <div class="next-step-hint">
+              <strong>Next Step:</strong> Switch back to <strong>Universal Converter Pro</strong> &rarr; open <strong>"Activate Pro"</strong> &rarr; paste this key into the activation box and click <strong>"Activate"</strong>.
+            </div>
+          </div>
+        </div>
+
+        <!-- Guide & Steps Column -->
+        <div class="steps-card">
+          <h3>📌 How It Works</h3>
+          
+          <div class="step-item">
+            <div class="step-number">1</div>
+            <div class="step-content">
+              <h4>Install Software</h4>
+              <p>Download and run the Universal Converter Pro Windows installer on your target PC.</p>
+            </div>
+          </div>
+
+          <div class="step-item">
+            <div class="step-number">2</div>
+            <div class="step-content">
+              <h4>Get Your Hardware ID</h4>
+              <p>Launch the app and open the Activation dialog to view your PC's unique Hardware ID.</p>
+            </div>
+          </div>
+
+          <div class="step-item">
+            <div class="step-number">3</div>
+            <div class="step-content">
+              <h4>Redeem on This Portal</h4>
+              <p>Paste your AppSumo voucher and Hardware ID into this form to generate your official RSA-2048 key.</p>
+            </div>
+          </div>
+
+          <div class="step-item">
+            <div class="step-number">4</div>
+            <div class="step-content">
+              <h4>Enjoy 100% Offline Lifetime Pro</h4>
+              <p>Paste the key into the app. Your software is permanently unlocked with no monthly fees!</p>
+            </div>
+          </div>
+
+          <!-- Download Box -->
+          <div class="download-installer-box">
+            <h4>📦 Need the Windows Installer?</h4>
+            <p>Download the ultra-lightweight (~2.8 MB) installer for Windows 7, 8, 10, and 11.</p>
+            <a href="https://github.com/universalpdfsoft/doc-converter-pro/releases/download/v1.0.0/UniversalConverterPro_Setup.exe" class="btn-download-app">
+              <span>⬇ Download Universal Converter Pro (.exe)</span>
+            </a>
+          </div>
+
+          <div class="guarantee-badge">
+            <span>🛡️</span>
+            <span><strong>AppSumo 60-Day Guarantee:</strong> Full support and guaranteed permanent activation.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>Universal Document & Image Converter Pro • Official AppSumo Lifetime Partner Edition</p>
+      <p style="margin-top: 6px;">Need technical help? Email: <a href="mailto:zainuelflash9@gmail.com">support@universalconverterpro.com</a> or visit our <a href="index.html">main website</a>.</p>
+    </div>
+  </footer>
+
+  <!-- WebCrypto RSA-2048 Generator Script -->
+  <script>
+    // Auto-detect and pre-fill Hardware ID from URL parameter ?hwid=...
+    document.addEventListener('DOMContentLoaded', () => {
+      const urlParams = new URLSearchParams(window.location.search);
+      const hwidFromUrl = urlParams.get('hwid');
+      if (hwidFromUrl) {
+        const hwidInput = document.getElementById('hardwareId');
+        if (hwidInput) {
+          hwidInput.value = hwidFromUrl.trim();
+          hwidInput.style.borderColor = '#10b981';
+        }
+      }
+    });
+
+    // Developer RSA-2048 Private Key Parameters for AppSumo Portal (Matching developer_keys.xml)
+    function b64ToB64Url(b64) {
+      return b64.replace(/\+/g, '-').replace(/\//g, '_').replace(/=+$/, '');
+    }
+
+    const RSA_JWK_PRIVATE = {
+      kty: "RSA",
+      n: b64ToB64Url("rm+gE5rtPCXs6XqHTfSEOWuvsJ2R8lqKqEL47DwggDg9STYDnBPnzrz7ZTzPUUhkulqvZFvl0s86fARGALgrMNgJxY2FnAMgKyP13FcES9ospB5oMRDXjUL4E8d27fKUYQkXAqghXxC++YeSxnAm+hFZUI0L0kqWaS8ocYcdPsJCobZf/guOAVfcfyepnKi+7vAbigRVasuhoBDvDdMwKRsKOUuIJ+UCMMOe4xGoWoVRRuTC0VNVTczOb1n/OFmvUd8+Q3ZwQbOrT6gTKSaTHJ+MeAq0nsDrIucUi4hlzkelRBXrj7YVObM7PitQYdZMrr52Y9znijGpXxNAwOwTYQ=="),
+      e: "AQAB",
+      d: b64ToB64Url("UPhFsPQITRQ5rYMPzXLD8bd33R63QW0f0c0MqPOcDoiMgjBNaqSexItaknqwrUVSZGJ16bryqnFA75I4QFs8yTZvCsGPlISq6PuPQ5Es0Fzcve3TZXsw40SDzQKYxQkGMSi8AqKyouMuErwIuI4UuZ1V/RsLsrimqvqV5mTWgWt8miYsvSkd7Prjp8aj5YoAb0NW5K2QSIn2y+5+Os47yYBn3+SDu6hg29PV0yamF/Dhb781AcUmlkbWFr2JM6izeXftDORtbefPTWuw2DORgw6l+rB8eN10HLvSERgUly30rtj39TLiaol4sYBjhfWaqfL5msq1ka5tR4agJqMmpQ=="),
+      p: b64ToB64Url("22kqeNGMpVxOWEQqZvIIP++PL9814BSUBXL/GvKZiZE8vCrUOtygnu1h5dpQyo0hhL+lY92V6BEsCFDyXNg5Ed4q9pA+C0pzhupb59Qd8D6HD9bTuZjBh3peR74rZfrAP2bmdyT8S3yUn7FLTAFz3uVPVSwJ/2C+u8R73yB22xM="),
+      q: b64ToB64Url("y4ZywDVbstywT0SJwW6is3svfPbvcCB73P25GvXMeZDF0Dq1x6Ig2IlIAj0M1CdKQWkkDHdT5YdxwT/581Y9hTB9A0kkZacvmr7lB6TfweOoInl1DvTH2VGSZSK1myToeAaXXiYVff1Yei8g7HL0soJrwk32MoYrB1aL59sm0js="),
+      dp: b64ToB64Url("N9DpHRMx1F9HDu1IXCf2MU2f/22pJvgVL82xWAmfRX/NE5FRrCe0NLnuzapcIysD++FFEcKs//xeVz9AaJ4Y5pK+GztWjUjDWu8DslYjx5oggccE1ZImqXBXy6h1IdxIS9jBiE3AYPOwW2+e2BcGgw2SwPgTEwRpgRra6Eg59EE="),
+      dq: b64ToB64Url("UeUo2YTfACrjWxImKEqfd38zDaLDmCfKD5Oc32dWvvftUSu+p7TqaJdc/WGZfujMbWOkWMvPW4XT1UIsDql+GdD4DNFqrujGNAtqV1gVnYxAxJaA7uK6ZAz5zm5YCzSfwmRMllrWvRqrdobuRZbANfBa8hWy4oOwXsSJiWNazK8="),
+      qi: b64ToB64Url("TFB/gFeD273UD1iX73A0yLIRCx7Xrw0ii2vfkVQLMRRnZK306oKU+zew0L6yd+p4oq+a7rEcJwcICFObjhtpwRDuAyi8DPlz5g/FXQnSJenRc8SMz2MavgkrKGjOA9Y8r84/3nAHdbf3gTbRFgucZKSA3uP1XJYrEIBgRyNjV8s="),
+      alg: "RS256",
+      ext: true,
+      key_ops: ["sign"]
+    };
+
+    async function generateRsaSignature(payloadText) {
+      const cryptoKey = await window.crypto.subtle.importKey(
+        "jwk",
+        RSA_JWK_PRIVATE,
+        { name: "RSASSA-PKCS1-v1_5", hash: "SHA-256" },
+        false,
+        ["sign"]
+      );
+
+      const encoder = new TextEncoder();
+      const dataBytes = encoder.encode(payloadText);
+      const signatureBuffer = await window.crypto.subtle.sign(
+        "RSASSA-PKCS1-v1_5",
+        cryptoKey,
+        dataBytes
+      );
+
+      // Convert ArrayBuffer to Base64
+      let binary = '';
+      const bytes = new Uint8Array(signatureBuffer);
+      for (let i = 0; i < bytes.byteLength; i++) {
+        binary += String.fromCharCode(bytes[i]);
+      }
+      return btoa(binary);
+    }
+
+    async function handleRedeem(e) {
+      e.preventDefault();
+
+      const btnSubmit = document.getElementById('btnSubmit');
+      const code = document.getElementById('appsumoCode').value.trim();
+      const email = document.getElementById('buyerEmail').value.trim();
+      const hwid = document.getElementById('hardwareId').value.trim();
+      const tier = document.getElementById('licenseTier').value;
+
+      if (!code || !email || !hwid) {
+        alert("Please complete all required fields.");
+        return;
+      }
+
+      btnSubmit.disabled = true;
+      btnSubmit.innerHTML = '<span>⏳ Signing Cryptographic Key...</span>';
+
+      try {
+        // Expiry ticks = 0 for Lifetime License
+        const payload = `${hwid}#${tier}#0`;
+        const sigBase64 = await generateRsaSignature(payload);
+        const combined = `${payload}||SIG||${sigBase64}`;
+        
+        // Base64 encode the combined string to get final serial key
+        const serialKey = btoa(unescape(encodeURIComponent(combined)));
+
+        // Display results
+        const resultBox = document.getElementById('resultBox');
+        const display = document.getElementById('generatedKeyDisplay');
+        display.textContent = serialKey;
+        resultBox.style.display = 'block';
+        resultBox.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+
+        btnSubmit.innerHTML = '<span>✔ Key Generated Successfully</span>';
+        btnSubmit.style.background = '#10b981';
+        btnSubmit.style.color = '#fff';
+
+        setTimeout(() => {
+          btnSubmit.disabled = false;
+          btnSubmit.innerHTML = '<span>🚀 Generate Another Key</span>';
+          btnSubmit.style.background = '';
+          btnSubmit.style.color = '';
+        }, 3500);
+
+      } catch (err) {
+        console.error(err);
+        alert("Failed to generate cryptographic key: " + err.message);
+        btnSubmit.disabled = false;
+        btnSubmit.innerHTML = '<span>🚀 Generate Lifetime License Key</span>';
+      }
+    }
+
+    function copyGeneratedKey() {
+      const keyText = document.getElementById('generatedKeyDisplay').textContent;
+      const btn = document.getElementById('btnCopyKey');
+      if (!keyText) return;
+
+      navigator.clipboard.writeText(keyText).then(() => {
+        const originalText = btn.innerHTML;
+        btn.innerHTML = '<span>✔ Copied to Clipboard!</span>';
+        btn.style.background = '#10b981';
+        btn.style.color = '#fff';
+        setTimeout(() => {
+          btn.innerHTML = originalText;
+          btn.style.background = '';
+          btn.style.color = '';
+        }, 2000);
+      });
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+================================================================================
+          PANDUAN UPLOAD KE GITHUB REPOSITORY: universalpdfsoft/doc-converter-pro
+================================================================================
+
+Semua file di dalam folder ini (e:\pdf\SIAP_UPLOAD_APPSUMO) sudah siap pakai 
+dan 100% berbahasa Inggris untuk pasar global / AppSumo.
+
+--------------------------------------------------------------------------------
+LANGKAH 1: UPLOAD FILE WEB (UNTUK SITUS RESMI & PORTAL REDEEM)
+--------------------------------------------------------------------------------
+1. Buka browser ke repositori baru Anda:
+   https://github.com/universalpdfsoft/doc-converter-pro
+2. Klik tombol [Add file] -> pilih [Upload files].
+3. Tarik dan lepas (Drag & Drop) 7 file berikut dari folder ini:
+   - index.html
+   - redeem.html
+   - styles.css
+   - script.js
+   - logo.png
+   - banner.png
+   - app.ico
+4. Klik tombol hijau [Commit changes].
+5. AKTIFKAN WEBSITE (Hanya 1x saja):
+   - Masuk ke menu [Settings] di tab atas repositori.
+   - Klik menu [Pages] di bilah sebelah kiri.
+   - Di bawah "Branch", pilih "main" dan folder "/ (root)", lalu klik [Save].
+   - Tunggu 1 menit. Website dan portal redeem Anda sudah online di:
+     * https://universalpdfsoft.github.io/doc-converter-pro/
+     * https://universalpdfsoft.github.io/doc-converter-pro/redeem.html
+
+--------------------------------------------------------------------------------
+LANGKAH 2: BUAT RELEASE (UNTUK UPLOAD FILE INSTALLER .EXE)
+--------------------------------------------------------------------------------
+1. Di halaman utama repositori (https://github.com/universalpdfsoft/doc-converter-pro),
+   lihat di kolom sebelah kanan ada tulisan "Releases", klik [Create a new release].
+2. Isi kolom formulir:
+   - Choose a tag: Ketik "v1.0.0" -> klik "Create new tag: v1.0.0 on publish"
+   - Release title: Universal Document & Image Converter Pro v1.0.0
+   - Attach binaries: Tarik dan lepas file installer berikut:
+     * UniversalConverterPro_Setup.exe
+3. Klik tombol hijau [Publish release].
+4. Link download installer resmi Anda otomatis aktif di:
+   https://github.com/universalpdfsoft/doc-converter-pro/releases/download/v1.0.0/UniversalConverterPro_Setup.exe
+
+--------------------------------------------------------------------------------
+URL RESMI UNTUK DIDISUBMIT KE APPSUMO:
+--------------------------------------------------------------------------------
+- Product Website URL : https://universalpdfsoft.github.io/doc-converter-pro/
+- Redemption URL      : https://universalpdfsoft.github.io/doc-converter-pro/redeem.html
+- Download URL        : https://github.com/universalpdfsoft/doc-converter-pro/releases/download/v1.0.0/UniversalConverterPro_Setup.exe
+================================================================================
