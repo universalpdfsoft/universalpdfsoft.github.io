@@ -1,24 +1,18 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Universal Converter Pro v1.0.0 — Download Resmi & Aktivasi Software Konverter Offline</title>
-  <meta name="description" content="Download resmi Universal Converter Pro v1.0.0. Software konverter dokumen dan gambar desktop 100% offline. Auto-fit Excel ke PDF rapi, support kertas F4 Folio, aman dan bergaransi resmi.">
-  <meta name="keywords" content="Universal Converter Pro, convert excel ke pdf f4, converter offline, download universal converter pro, aktivasi lisensi software, pdf converter indonesia">
+  <title>Universal Converter Pro — Official 100% Offline Document &amp; Image Converter</title>
+  <meta name="description" content="Fast, 100% offline batch document and image converter. Zero cloud uploads, total data privacy, auto-fit Excel to PDF, and official AppSumo lifetime license.">
+  <meta name="keywords" content="Universal Converter Pro, offline document converter, private pdf converter, excel to pdf, image converter, appsumo lifetime deal">
   <meta name="author" content="Muhammad Zainul Maarif">
 
-  <!-- Open Graph / Facebook -->
+  <!-- Open Graph / Social Media -->
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Universal Converter Pro v1.0.0 — Konverter Dokumen & Gambar 100% Offline">
-  <meta property="og:description" content="Solusi praktis Excel ke PDF rapi tanpa kolom terpotong, support kertas F4 Folio. Sekali beli aktif seumur hidup!">
-  <meta property="og:image" content="logo.png">
-
-  <!-- Twitter -->
-  <meta property="twitter:card" content="summary_large_image">
-  <meta property="twitter:title" content="Universal Converter Pro v1.0.0">
-  <meta property="twitter:description" content="Software konverter offline nomor 1. Download installer resmi v1.0.0 (2.8 MB) dan aktifkan lisensi lifetime.">
-  <meta property="twitter:image" content="banner.png">
+  <meta property="og:title" content="Universal Converter Pro — Official 100% Offline Converter">
+  <meta property="og:description" content="Convert PDF, Office, and Images 100% offline. Zero server uploads, total privacy, official AppSumo lifetime access.">
+  <meta property="og:image" content="banner.png">
 
   <!-- Favicon -->
   <link rel="icon" type="image/x-icon" href="app.ico">
@@ -27,55 +21,228 @@
   <!-- Google Fonts: Plus Jakarta Sans & Outfit -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="styles.css">
+
+  <style>
+    /* Premium AppSumo & Global Styling Overrides */
+    :root {
+      --appsumo-yellow: #ffbe00;
+      --appsumo-yellow-dark: #e5a700;
+      --appsumo-yellow-glow: rgba(255, 190, 0, 0.25);
+    }
+    .appsumo-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(255, 190, 0, 0.12);
+      border: 1px solid rgba(255, 190, 0, 0.35);
+      color: #ffbe00;
+      font-weight: 700;
+      font-size: 0.85rem;
+      padding: 6px 16px;
+      border-radius: 999px;
+      letter-spacing: 0.3px;
+    }
+    .btn-appsumo {
+      background: linear-gradient(135deg, #ffbe00 0%, #e6a000 100%);
+      color: #0b1120 !important;
+      font-weight: 800;
+      border: none;
+      box-shadow: 0 4px 14px var(--appsumo-yellow-glow);
+      transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .btn-appsumo:hover {
+      background: linear-gradient(135deg, #ffc926 0%, #f0aa0a 100%);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(255, 190, 0, 0.45);
+    }
+    .lang-switcher {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 6px 12px;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: 8px;
+      font-size: 0.82rem;
+      color: #cbd5e1;
+      text-decoration: none;
+      transition: all 0.2s ease;
+    }
+    .lang-switcher:hover {
+      background: rgba(255, 255, 255, 0.12);
+      color: #fff;
+      border-color: rgba(255, 255, 255, 0.3);
+    }
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px;
+      margin-top: 36px;
+    }
+    @media (max-width: 900px) {
+      .gallery-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+    .gallery-card {
+      background: rgba(17, 24, 39, 0.7);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 16px;
+      overflow: hidden;
+      transition: all 0.3s ease;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+    }
+    .gallery-card:hover {
+      border-color: rgba(99, 102, 241, 0.4);
+      transform: translateY(-4px);
+      box-shadow: 0 16px 40px rgba(99, 102, 241, 0.2);
+    }
+    .gallery-card img {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+    }
+    .gallery-card-body {
+      padding: 18px 22px;
+    }
+    .gallery-card-title {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: #f8fafc;
+      margin-bottom: 6px;
+    }
+    .gallery-card-desc {
+      font-size: 0.88rem;
+      color: #94a3b8;
+      line-height: 1.5;
+    }
+    .pricing-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      margin-top: 36px;
+    }
+    @media (max-width: 960px) {
+      .pricing-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+    .pricing-card {
+      background: rgba(17, 24, 39, 0.75);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 20px;
+      padding: 32px 28px;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      backdrop-filter: blur(12px);
+      transition: all 0.3s ease;
+    }
+    .pricing-card.popular {
+      border-color: #ffbe00;
+      box-shadow: 0 0 35px rgba(255, 190, 0, 0.2);
+      transform: scale(1.02);
+    }
+    .popular-tag {
+      position: absolute;
+      top: -12px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: #ffbe00;
+      color: #0b1120;
+      font-weight: 800;
+      font-size: 0.75rem;
+      padding: 4px 14px;
+      border-radius: 999px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    .price-num {
+      font-size: 2.75rem;
+      font-weight: 900;
+      color: #f8fafc;
+      font-family: 'Outfit', sans-serif;
+    }
+    .price-original {
+      text-decoration: line-through;
+      color: #64748b;
+      font-size: 1.15rem;
+      margin-left: 8px;
+      font-weight: 500;
+    }
+    .tier-features {
+      list-style: none;
+      padding: 0;
+      margin: 24px 0;
+      flex-grow: 1;
+    }
+    .tier-features li {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: #cbd5e1;
+      font-size: 0.92rem;
+      margin-bottom: 12px;
+    }
+    .tier-features li svg {
+      color: #10b981;
+      flex-shrink: 0;
+    }
+  </style>
 </head>
 <body>
-  <!-- Background Glow & Grid Effects -->
+  <!-- Ambient Background Glows -->
   <div class="bg-glow bg-glow-1"></div>
   <div class="bg-glow bg-glow-2"></div>
   <div class="bg-grid-overlay"></div>
 
   <!-- Announcement Bar -->
-  <aside class="top-announcement" aria-label="Informasi Rilis">
+  <aside class="top-announcement" aria-label="Official Deal Announcement">
     <div class="container top-announcement-inner">
-      <span class="badge-pill pulse">⚡ Rilis Resmi v1.0.0</span>
-      <span>Dapatkan <strong>Trial Gratis 24 Jam</strong> otomatis begitu diinstal di komputer Anda!</span>
-      <a href="#panduan" class="announcement-link">Lihat Tata Cara & Aktivasi &rarr;</a>
+      <span class="badge-pill pulse">🌮 Official AppSumo Deal</span>
+      <span>Get instant <strong>Lifetime Access</strong> with 100% offline data privacy!</span>
+      <a href="redeem.html" class="announcement-link">Redeem License Key &rarr;</a>
     </div>
   </aside>
 
   <!-- Navigation Bar -->
   <header class="site-header">
-    <nav class="container nav-container" aria-label="Menu Utama">
+    <nav class="container nav-container" aria-label="Main Navigation">
       <a href="#" class="brand-logo">
-        <img src="logo.png" alt="Logo Universal Converter Pro" class="brand-img" width="42" height="42">
+        <img src="logo.png" alt="Universal Converter Pro Logo" class="brand-img" width="42" height="42">
         <div class="brand-info">
           <span class="brand-name">Universal Converter <span class="text-gradient">Pro</span></span>
-          <span class="brand-sub">v1.0.0 Official Release</span>
+          <span class="brand-sub">Official Lifetime Edition</span>
         </div>
       </a>
 
-      <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Buka Menu" aria-expanded="false">
+      <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Open Menu" aria-expanded="false">
         <span></span>
         <span></span>
         <span></span>
       </button>
 
       <div class="nav-links" id="navLinks">
-        <a href="#keunggulan" class="nav-link">Keunggulan</a>
-        <a href="#fitur" class="nav-link">Fitur Lengkap</a>
-        <a href="#panduan" class="nav-link">Panduan Aktivasi</a>
-        <a href="#pembayaran" class="nav-link">Harga & Pembayaran</a>
+        <a href="#features" class="nav-link">Features</a>
+        <a href="#screenshots" class="nav-link">Screenshots</a>
+        <a href="#pricing" class="nav-link">Pricing</a>
+        <a href="#how-to-redeem" class="nav-link">How to Redeem</a>
         <a href="#faq" class="nav-link">FAQ</a>
-        <a href="https://github.com/universalpdfsoft/universalconverterpro/releases/tag/v1.0.0" target="_blank" rel="noopener" class="nav-link github-link" title="Kunjungi Halaman Rilis GitHub">
-          <svg class="icon-svg" viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
-            <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
-          </svg>
-          <span>GitHub</span>
+        
+        <!-- Language Switcher to Indonesian version -->
+        <a href="index_id.html" class="lang-switcher" title="Beralih ke Bahasa Indonesia">
+          <span>🇮🇩 ID</span>
         </a>
-        <a href="https://github.com/universalpdfsoft/universalconverterpro/releases/download/v1.0.0/UniversalConverterPro_Setup.exe" class="btn btn-primary btn-nav-cta" download id="navDownloadBtn">
+
+        <a href="redeem.html" class="btn btn-appsumo" style="padding: 8px 16px; border-radius: 8px;">
+          <span>🔑 Redeem Voucher</span>
+        </a>
+
+        <a href="https://github.com/universalpdfsoft/doc-converter-pro/releases/download/v1.0.0/UniversalConverterPro_Setup.exe" class="btn btn-primary btn-nav-cta" download id="navDownloadBtn">
           <svg class="icon-svg" viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
             <path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM17 13l-5 5-5-5h3V9h4v4h3z"/>
           </svg>
@@ -85,1029 +252,386 @@
     </nav>
   </header>
 
-  <main>
-    <!-- HERO SECTION -->
-    <section class="hero-section">
-      <div class="container hero-layout">
-        <div class="hero-content">
-          <div class="hero-badges">
-            <span class="hero-chip chip-glow">
-              <span class="dot-indicator"></span> 100% Offline Tanpa Internet
-            </span>
-            <span class="hero-chip chip-neutral">
-              🇮🇩 Dirancang Khusus Kebutuhan Indonesia
-            </span>
-          </div>
-
-          <h1 class="hero-title">
-            Konversi Dokumen &amp; Excel ke PDF <span class="text-gradient">Rapi Sempurna</span> Tanpa Drama
-          </h1>
-
-          <p class="hero-lead">
-            Hentikan lembur berjam-jam akibat tabel Excel kepotong, nama siswa/karyawan tumpuk-tumpuk, atau angka berubah jadi desimal! 
-            <strong>Universal Converter Pro v1.0.0</strong> bekerja 100% langsung di komputer Anda tanpa upload ke internet. Dokumen rahasia sekolah &amp; instansi dijamin aman seutuhnya.
-          </p>
-
-          <div class="hero-actions">
-            <a href="https://github.com/universalpdfsoft/universalconverterpro/releases/download/v1.0.0/UniversalConverterPro_Setup.exe" class="btn btn-primary btn-lg btn-download-hero" id="mainDownloadBtn" download>
-              <div class="btn-icon-wrap">
-                <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
-                  <path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM17 13l-5 5-5-5h3V9h4v4h3z"/>
-                </svg>
-              </div>
-              <div class="btn-text-wrap">
-                <span class="btn-title">Download Setup Resmi (v1.0.0)</span>
-                <span class="btn-subtitle">UniversalConverterPro_Setup.exe • 2.84 MB</span>
-              </div>
-            </a>
-
-            <a href="https://wa.me/6285641184229?text=Halo%20Mas%20Zainul,%20saya%20tertarik%20dengan%20software%20Universal%20Converter%20Pro%20v1.0.0%20dan%20ingin%20konsultasi%20/%20beli%20lisensi%20resmi" target="_blank" rel="noopener" class="btn btn-secondary btn-lg" id="heroWhatsAppBtn">
-              <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" class="whatsapp-color">
-                <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0012.04 2zm.01 18.06c-1.49 0-2.95-.4-4.22-1.15l-.3-.18-3.13.82.83-3.05-.2-.31a8.03 8.03 0 01-1.23-4.28c0-4.45 3.62-8.08 8.08-8.08 2.16 0 4.19.84 5.71 2.37 1.53 1.53 2.37 3.56 2.37 5.72-.01 4.47-3.64 8.09-8.11 8.09zm4.43-6.07c-.24-.12-1.44-.71-1.66-.79-.22-.08-.39-.12-.55.12-.16.24-.63.79-.77.95-.14.16-.28.18-.53.06-.24-.12-1.03-.38-1.96-1.21-.72-.64-1.21-1.44-1.35-1.68-.14-.24-.02-.37.11-.49.11-.11.24-.28.37-.43.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.55-1.33-.76-1.82-.2-.48-.41-.41-.56-.42h-.48c-.16 0-.43.06-.66.31-.22.24-.87.85-.87 2.08 0 1.22.89 2.41 1.02 2.57.12.16 1.76 2.68 4.25 3.76.59.26 1.06.41 1.42.53.6.19 1.14.16 1.57.1.48-.07 1.44-.59 1.64-1.16.2-.57.2-1.06.14-1.16-.06-.1-.22-.16-.46-.28z"/>
-              </svg>
-              <span>Beli Lisensi Permanen</span>
-            </a>
-          </div>
-
-          <div class="hero-system-compat">
-            <div class="compat-item">
-              <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M0 3.449L9.75 2.1v9.451H0m10.949-9.602L24 0v11.4H10.949M0 12.6h9.75v9.451L0 20.699M10.949 12.6H24V24l-12.901-1.799"/></svg>
-              <span>Windows 7 SP1, 8, 10, 11 (32 &amp; 64-Bit)</span>
-            </div>
-            <div class="compat-divider">•</div>
-            <div class="compat-item">
-              <span class="text-success">✔</span>
-              <span>Free Trial 24 Jam Otomatis</span>
-            </div>
-            <div class="compat-divider">•</div>
-            <div class="compat-item">
-              <span class="text-success">✔</span>
-              <span>Ukuran Ringan: 2.8 MB</span>
-            </div>
-          </div>
-
-          <div class="release-note-callout">
-            <span>Ingin cek verifikasi rilis resmi?</span>
-            <a href="https://github.com/universalpdfsoft/universalconverterpro/releases/tag/v1.0.0" target="_blank" rel="noopener">Buka Halaman Rilis GitHub (v1.0.0 Tag) &rarr;</a>
-          </div>
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="container hero-container">
+      <div class="hero-content">
+        <div class="appsumo-pill" style="margin-bottom: 16px;">
+          <span>🌮 AppSumo Official Lifetime Deal</span>
         </div>
-
-        <!-- HERO SHOWCASE CARD -->
-        <div class="hero-visual">
-          <div class="app-window-card">
-            <!-- Title Bar -->
-            <div class="app-title-bar">
-              <div class="window-controls">
-                <span class="ctrl-dot dot-close"></span>
-                <span class="ctrl-dot dot-min"></span>
-                <span class="ctrl-dot dot-max"></span>
-              </div>
-              <div class="window-title">
-                <img src="logo.png" alt="Icon" width="14" height="14">
-                <span>Universal Converter Pro — v1.0.0 (Offline Mode)</span>
-              </div>
-              <div class="window-badge">
-                <span class="badge-status-dot"></span> TRIAL AKTIF
-              </div>
-            </div>
-
-            <!-- Banner Graphic Inside App Mockup -->
-            <div class="app-hero-header">
-              <img src="banner.png" alt="App Banner Background" class="app-banner-bg">
-              <div class="app-hero-overlay">
-                <img src="logo.png" alt="App Logo" class="app-logo-badge" width="56" height="56">
-                <div>
-                  <h3 class="app-hero-name">Universal Converter Pro</h3>
-                  <p class="app-hero-tagline">Solusi Cetak &amp; Konversi Excel Auto-Fit F4 (Folio) Presisi Tinggi</p>
-                </div>
-              </div>
-            </div>
-
-            <!-- App Mockup Body -->
-            <div class="app-body-content">
-              <!-- Feature Tab Pills -->
-              <div class="mock-tabs">
-                <span class="mock-tab active">📊 Excel ➔ PDF (Auto-Fit)</span>
-                <span class="mock-tab">📄 Word ➔ PDF</span>
-                <span class="mock-tab">🖼️ Gambar ➔ PDF</span>
-              </div>
-
-              <!-- Conversion Queue Mockup -->
-              <div class="mock-queue">
-                <div class="mock-queue-item">
-                  <div class="file-type-icon excel-icon">XLSX</div>
-                  <div class="file-meta">
-                    <span class="file-name">Laporan_Nilai_Rapor_Kelas_XII_F4.xlsx</span>
-                    <span class="file-sub">Ukuran Kertas: F4 (Folio 215 x 330 mm) • Auto-Fit: Aktif</span>
-                  </div>
-                  <div class="status-pill status-ready">Siap Konversi</div>
-                </div>
-
-                <div class="mock-queue-item completed">
-                  <div class="file-type-icon pdf-icon">PDF</div>
-                  <div class="file-meta">
-                    <span class="file-name">Rekap_Gaji_Pegawai_Bulanan_2026.pdf</span>
-                    <span class="file-sub">Hasil: 100% Sempurna, 0 Kolom Terpotong, Angka Bulat</span>
-                  </div>
-                  <div class="status-pill status-done">✔ Berhasil</div>
-                </div>
-              </div>
-
-              <!-- Quick Stats / Feature Indicators -->
-              <div class="app-stats-row">
-                <div class="stat-box">
-                  <span class="stat-number">2.8 MB</span>
-                  <span class="stat-label">Ukuran Installer</span>
-                </div>
-                <div class="stat-box">
-                  <span class="stat-number">&lt; 1 Detik</span>
-                  <span class="stat-label">Waktu Startup</span>
-                </div>
-                <div class="stat-box">
-                  <span class="stat-number">RSA-2048</span>
-                  <span class="stat-label">Keamanan Lisensi</span>
-                </div>
-                <div class="stat-box">
-                  <span class="stat-number">100%</span>
-                  <span class="stat-label">Bebas Internet</span>
-                </div>
-              </div>
-
-              <!-- Quick Activation Callout inside Mockup -->
-              <div class="mock-activation-alert">
-                <div class="mock-alert-text">
-                  <strong>💡 Mau coba sekarang?</strong> Nikmati semua fitur premium gratis 24 jam pertama!
-                </div>
-                <a href="https://github.com/universalpdfsoft/universalconverterpro/releases/download/v1.0.0/UniversalConverterPro_Setup.exe" class="btn btn-sm btn-primary">Unduh Installer</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- TRUST STATS & METRICS STRIP -->
-    <section class="trust-metrics-section">
-      <div class="container trust-grid">
-        <div class="trust-card">
-          <div class="trust-icon">🛡️</div>
-          <div class="trust-info">
-            <h4>100% Privasi &amp; Data Lokal</h4>
-            <p>Dokumen tidak pernah diunggah ke internet. Aman untuk arsip instansi &amp; data finansial.</p>
-          </div>
-        </div>
-        <div class="trust-card">
-          <div class="trust-icon">📐</div>
-          <div class="trust-info">
-            <h4>Support Kertas F4 / Folio</h4>
-            <p>Mendukung format resmi Indonesia: Folio (215x330mm), A4, A3, Legal, dan Letter.</p>
-          </div>
-        </div>
-        <div class="trust-card">
-          <div class="trust-icon">⚡</div>
-          <div class="trust-info">
-            <h4>Super Ringan &amp; Cepat</h4>
-            <p>Diprogram efisien dengan .NET Framework resmi. Lancar di komputer lawas spek standar.</p>
-          </div>
-        </div>
-        <div class="trust-card">
-          <div class="trust-icon">♾️</div>
-          <div class="trust-info">
-            <h4>Lisensi Permanen (Lifetime)</h4>
-            <p>Sekali beli untuk selamanya! Tidak ada biaya langganan bulanan atau tahunan tersembunyi.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- PAIN POINTS VS SOLUTIONS (KENAPA KAMI?) -->
-    <section class="section comparison-section" id="keunggulan">
-      <div class="container">
-        <div class="section-header text-center">
-          <span class="badge-pill">Perbandingan Nyata</span>
-          <h2 class="section-title">Masih Mau Mengambil Risiko dengan Converter Online Gratisan?</h2>
-          <p class="section-subtitle">
-            Banyak guru, tata usaha, akuntan, dan staf kantor membuang waktu berharga akibat drama konversi online yang mengecewakan.
-          </p>
-        </div>
-
-        <div class="comparison-grid">
-          <!-- Problem Box -->
-          <div class="comp-box comp-bad">
-            <div class="comp-header">
-              <span class="comp-badge bad">❌ Converter Online Gratisan</span>
-              <h3>Drama yang Sering Terjadi</h3>
-            </div>
-            <ul class="comp-list">
-              <li>
-                <span class="icon-cross">✕</span>
-                <div>
-                  <strong>Kolom Terpotong:</strong> Kolom paling kanan di Excel sering hilang atau terpotong terpisah di lembar baru saat dijadikan PDF.
-                </div>
-              </li>
-              <li>
-                <span class="icon-cross">✕</span>
-                <div>
-                  <strong>Teks Bertumpuk Hitam:</strong> Nama siswa atau keterangan panjang bertumpuk jadi satu gumpalan hitam legam tak terbaca.
-                </div>
-              </li>
-              <li>
-                <span class="icon-cross">✕</span>
-                <div>
-                  <strong>Angka Berubah Format:</strong> Nilai rapor 85 otomatis berubah jadi desimal 85.0 di mana-mana, merusak format resmi.
-                </div>
-              </li>
-              <li>
-                <span class="icon-cross">✕</span>
-                <div>
-                  <strong>Kerahasiaan Data Terancam:</strong> Dokumen sensitif instansi, NIK, nilai siswa, atau slip gaji bocor ke server pihak ketiga.
-                </div>
-              </li>
-              <li>
-                <span class="icon-cross">✕</span>
-                <div>
-                  <strong>Ketergantungan Internet:</strong> Wajib kuota internet, lemot parah saat file besar atau server converter antre.
-                </div>
-              </li>
-              <li>
-                <span class="icon-cross">✕</span>
-                <div>
-                  <strong>Biaya Langganan Mahal:</strong> Kalau mau fitur lengkap, harus langganan bulanan puluhan hingga ratusan ribu tiap bulan.
-                </div>
-              </li>
-            </ul>
-          </div>
-
-          <!-- Solution Box -->
-          <div class="comp-box comp-good highlight-card">
-            <div class="comp-header">
-              <span class="comp-badge good">✔ Universal Converter Pro</span>
-              <h3>Solusi Pasti &amp; Profesional</h3>
-            </div>
-            <ul class="comp-list">
-              <li>
-                <span class="icon-check">✔</span>
-                <div>
-                  <strong>Smart Auto-Fit Columns:</strong> Algoritma pintar menyesuaikan lebar kolom otomatis agar seluruh tabel pas sempurna di kertas.
-                </div>
-              </li>
-              <li>
-                <span class="icon-check">✔</span>
-                <div>
-                  <strong>Dukungan Kertas F4 (Folio 215x330mm):</strong> Tidak perlu pusing mencari settingan F4 printer yang hilang. Tersedia instan!
-                </div>
-              </li>
-              <li>
-                <span class="icon-check">✔</span>
-                <div>
-                  <strong>Angka Bulat Bersih &amp; Garis Rapi:</strong> Mempertahankan format asli sel Excel tanpa penambahan desimal palsu dan gridline utuh.
-                </div>
-              </li>
-              <li>
-                <span class="icon-check">✔</span>
-                <div>
-                  <strong>100% Offline &amp; Tanpa Kuota:</strong> Pemrosesan murni di prosesor &amp; RAM lokal Anda. Privasi dokumen dijamin aman 100%.
-                </div>
-              </li>
-              <li>
-                <span class="icon-check">✔</span>
-                <div>
-                  <strong>Sangat Ringan (2.8 MB):</strong> Buka software dalam 1 detik. Kompatibel penuh dari Windows 7 SP1 sampai Windows 11.
-                </div>
-              </li>
-              <li>
-                <span class="icon-check">✔</span>
-                <div>
-                  <strong>Beli Sekali, Pakai Selamanya:</strong> Lisensi permanen Lifetime tanpa batas waktu dan tanpa tagihan berkala.
-                </div>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- CORE FEATURES SECTION -->
-    <section class="section features-section" id="fitur">
-      <div class="container">
-        <div class="section-header text-center">
-          <span class="badge-pill">Fitur Unggulan</span>
-          <h2 class="section-title">Semua Kebutuhan Konversi Anda dalam 1 Aplikasi Ringkas</h2>
-          <p class="section-subtitle">
-            Didesain khusus untuk efisiensi instansi pemerintah, sekolah/madrasah, perguruan tinggi, percetakan, dan kantor modern.
-          </p>
-        </div>
-
-        <div class="features-grid">
-          <!-- Feature 1 -->
-          <div class="feature-card">
-            <div class="feature-icon-wrapper f-blue">
-              <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor">
-                <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/>
-              </svg>
-            </div>
-            <h3 class="feature-title">Excel ➔ PDF dengan Smart Auto-Fit</h3>
-            <p class="feature-desc">
-              Konversi spreadsheet XLSX/XLS multi-kolom yang rumit (rapor, ledger nilai, daftar inventaris, absensi) dengan penyesuaian otomatis agar pas di satu lembar kertas F4 atau A4.
-            </p>
-            <div class="feature-tags">
-              <span>Auto-Fit Cerdas</span>
-              <span>Kertas F4 / Folio</span>
-              <span>Header Ganda Rapih</span>
-            </div>
-          </div>
-
-          <!-- Feature 2 -->
-          <div class="feature-card">
-            <div class="feature-icon-wrapper f-purple">
-              <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor">
-                <path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"/>
-              </svg>
-            </div>
-            <h3 class="feature-title">Konversi Dokumen Dua Arah</h3>
-            <p class="feature-desc">
-              Ubah DOCX ke PDF berkualitas tinggi, ekstrak PDF ke teks DOCX terstruktur, ubah file TXT dan dokumen HTML ke format yang siap cetak tanpa ketergantungan paket Microsoft Office berbayar.
-            </p>
-            <div class="feature-tags">
-              <span>DOCX ↔ PDF</span>
-              <span>TXT ↔ DOCX</span>
-              <span>HTML ➔ Dokumen</span>
-            </div>
-          </div>
-
-          <!-- Feature 3 -->
-          <div class="feature-card">
-            <div class="feature-icon-wrapper f-emerald">
-              <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor">
-                <path d="M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zM8.5 13.5l2.5 3.01L14.5 12l4.5 6H5l3.5-4.5z"/>
-              </svg>
-            </div>
-            <h3 class="feature-title">Gambar ke PDF &amp; Konverter Gambar</h3>
-            <p class="feature-desc">
-              Gabungkan puluhan foto dokumen JPG, PNG, WEBP, BMP menjadi 1 file PDF tersusun rapi. Tersedia juga generator Icon (.ICO 32-bit) dan konverter format gambar bebas kompresi.
-            </p>
-            <div class="feature-tags">
-              <span>Merge Puluhan Gambar</span>
-              <span>Generator Icon .ICO</span>
-              <span>Lossless Compression</span>
-            </div>
-          </div>
-
-          <!-- Feature 4 -->
-          <div class="feature-card">
-            <div class="feature-icon-wrapper f-cyan">
-              <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor">
-                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14H9V8h2v8zm4 0h-2V8h2v8z"/>
-              </svg>
-            </div>
-            <h3 class="feature-title">Batch Queue &amp; Drag-and-Drop</h3>
-            <p class="feature-desc">
-              Cukup seret (drag-and-drop) banyak file sekaligus dari Windows Explorer. Sistem antrean cerdas berbasis multithreading mengeksekusi dokumen satu per satu dengan kecepatan maksimum.
-            </p>
-            <div class="feature-tags">
-              <span>Drag &amp; Drop</span>
-              <span>Multi-Threading</span>
-              <span>Indikator Progress Real-Time</span>
-            </div>
-          </div>
-
-          <!-- Feature 5 -->
-          <div class="feature-card">
-            <div class="feature-icon-wrapper f-amber">
-              <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor">
-                <path d="M12 2a10 10 0 100 20 10 10 0 000-20zm1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/>
-              </svg>
-            </div>
-            <h3 class="feature-title">Dukungan Multibahasa (i18n)</h3>
-            <p class="feature-desc">
-              Antarmuka tersedia dalam 4 pilihan bahasa: Bahasa Indonesia, English, Español, dan Hindi. Ganti bahasa dalam sekejap tanpa harus mematikan software.
-            </p>
-            <div class="feature-tags">
-              <span>Bahasa Indonesia</span>
-              <span>English</span>
-              <span>Ganti Runtime</span>
-            </div>
-          </div>
-
-          <!-- Feature 6 -->
-          <div class="feature-card">
-            <div class="feature-icon-wrapper f-rose">
-              <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor">
-                <path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z"/>
-              </svg>
-            </div>
-            <h3 class="feature-title">Lisensi Kriptografis RSA-2048</h3>
-            <p class="feature-desc">
-              Aktivasi mandiri dengan keamanan tingkat enterprise berbasis Hardware ID (HWID). Tidak membutuhkan dongle USB fisik dan tidak memerlukan koneksi internet untuk aktivasi.
-            </p>
-            <div class="feature-tags">
-              <span>Enkripsi Asimetris</span>
-              <span>Aktivasi 100% Offline</span>
-              <span>Bebas Dongle</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- STEP-BY-STEP GUIDE (TATA CARA LENGKAP: INSTALASI -> AKTIVASI -> PEMBAYARAN) -->
-    <section class="section guide-section" id="panduan">
-      <div class="container">
-        <div class="section-header text-center">
-          <span class="badge-pill">Panduan Lengkap</span>
-          <h2 class="section-title">Tata Cara Mulai dari Instalasi, Aktivasi, hingga Pembayaran</h2>
-          <p class="section-subtitle">
-            Hanya 4 langkah mudah untuk menikmati software konverter dokumen offline terbaik di komputer Anda.
-          </p>
-        </div>
-
-        <div class="steps-timeline">
-          <!-- Step 1 -->
-          <div class="step-card">
-            <div class="step-number-col">
-              <div class="step-circle">1</div>
-              <div class="step-connector"></div>
-            </div>
-            <div class="step-content">
-              <div class="step-badge">Langkah Pertama</div>
-              <h3 class="step-title">Download &amp; Instal Installer Resmi (Gratis)</h3>
-              <p class="step-text">
-                Unduh file setup resmi <code>UniversalConverterPro_Setup.exe</code> langsung dari link rilis GitHub kami. Ukurannya sangat hemat kuota, hanya sekitar <strong>2.84 MB</strong>.
-              </p>
-              
-              <div class="step-box-action">
-                <a href="https://github.com/universalpdfsoft/universalconverterpro/releases/download/v1.0.0/UniversalConverterPro_Setup.exe" class="btn btn-primary" download id="stepDownloadBtn">
-                  <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
-                    <path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM17 13l-5 5-5-5h3V9h4v4h3z"/>
-                  </svg>
-                  <span>Download UniversalConverterPro_Setup.exe</span>
-                </a>
-                <span class="step-hint">Setelah download selesai, klik 2x file installer &gt; klik <strong>Next</strong> &gt; <strong>Install</strong> &gt; <strong>Finish</strong>.</span>
-              </div>
-
-              <div class="step-notice">
-                <span class="notice-icon">🎁</span>
-                <div>
-                  <strong>Trial Gratis 24 Jam Otomatis:</strong> Begitu instalasi selesai dan aplikasi dibuka, masa percobaan gratis 24 jam langsung aktif secara otomatis! Anda bisa mencoba semua fitur konversi sepuasnya tanpa biaya.
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Step 2 -->
-          <div class="step-card">
-            <div class="step-number-col">
-              <div class="step-circle">2</div>
-              <div class="step-connector"></div>
-            </div>
-            <div class="step-content">
-              <div class="step-badge">Langkah Kedua</div>
-              <h3 class="step-title">Buka Aplikasi &amp; Salin Kode "Hardware ID" Komputer Anda</h3>
-              <p class="step-text">
-                Jika masa trial Anda habis atau Anda ingin langsung mengaktifkan lisensi permanen (Lifetime), buka jendela aktivasi di aplikasi:
-              </p>
-              <ol class="step-substeps">
-                <li>Buka software <strong>Universal Converter Pro</strong> di laptop/PC Anda.</li>
-                <li>Klik tombol <strong>"🔑 Aktivasi"</strong> di pojok kanan atas software (atau di popup informasi masa trial).</li>
-                <li>Di dalam jendela aktivasi, Anda akan melihat kode unik bernama <strong>Hardware ID</strong> (contoh: <code>A1AF-9630-2186-DCF1</code>).</li>
-                <li>Klik tombol <strong>"📋 Salin ID"</strong> untuk menyalin kode Hardware ID tersebut ke clipboard komputer Anda.</li>
-              </ol>
-
-              <div class="step-tip">
-                <span class="tip-icon">💡</span>
-                <span><strong>Catatan:</strong> Hardware ID adalah kode identitas unik mesin Anda yang aman dan digunakan untuk membuat Serial Key resmi khusus untuk komputer Anda.</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Step 3 -->
-          <div class="step-card">
-            <div class="step-number-col">
-              <div class="step-circle">3</div>
-              <div class="step-connector"></div>
-            </div>
-            <div class="step-content">
-              <div class="step-badge">Langkah Ketiga</div>
-              <h3 class="step-title">Lakukan Pembayaran &amp; Kirim Hardware ID via WhatsApp</h3>
-              <p class="step-text">
-                Lakukan transfer pembayaran lisensi ke salah satu rekening atau dompet digital resmi developer kami. Semua kanal pembayaran terdaftar resmi atas nama pengembang langsung: <strong>MUHAMMAD ZAINUL MAARIF</strong>.
-              </p>
-
-              <!-- Quick Copy Account Grid -->
-              <div class="payment-cards-preview">
-                <div class="bank-pill">
-                  <div class="bank-pill-title">
-                    <span class="bank-tag mandiri">MANDIRI</span>
-                    <span class="account-num" id="accMandiri">1840013197478</span>
-                  </div>
-                  <button class="btn-copy-sm" data-copy="1840013197478" title="Salin Nomor Rekening Mandiri">
-                    <span class="copy-text">Salin</span>
-                  </button>
-                </div>
-
-                <div class="bank-pill">
-                  <div class="bank-pill-title">
-                    <span class="bank-tag bni">BNI</span>
-                    <span class="account-num" id="accBni">983633207</span>
-                  </div>
-                  <button class="btn-copy-sm" data-copy="983633207" title="Salin Nomor Rekening BNI">
-                    <span class="copy-text">Salin</span>
-                  </button>
-                </div>
-
-                <div class="bank-pill">
-                  <div class="bank-pill-title">
-                    <span class="bank-tag dana">DANA / SHOPEE</span>
-                    <span class="account-num" id="accDana">085641184229</span>
-                  </div>
-                  <button class="btn-copy-sm" data-copy="085641184229" title="Salin Nomor DANA / ShopeePay">
-                    <span class="copy-text">Salin</span>
-                  </button>
-                </div>
-
-                <div class="bank-pill">
-                  <div class="bank-pill-title">
-                    <span class="bank-tag paypal">PAYPAL</span>
-                    <span class="account-num" id="accPaypal">zainuelflash9@gmail.com</span>
-                  </div>
-                  <button class="btn-copy-sm" data-copy="zainuelflash9@gmail.com" title="Salin Email PayPal">
-                    <span class="copy-text">Salin</span>
-                  </button>
-                </div>
-              </div>
-
-              <div class="step-confirmation-chat">
-                <p>Setelah transfer berhasil, cukup kirimkan pesan ke WhatsApp Developer:</p>
-                <div class="chat-template-box">
-                  <code>
-                    "Halo Mas Zainul, saya sudah transfer untuk lisensi Universal Converter Pro.<br>
-                    • Bukti transfer terlampir.<br>
-                    • Hardware ID saya: [TEMPELKAN HARDWARE ID ANDA DI SINI]"
-                  </code>
-                </div>
-                <a href="https://wa.me/6285641184229?text=Halo%20Mas%20Zainul,%20saya%20sudah%20transfer%20pembayaran%20Lisensi%20Resmi%20Universal%20Converter%20Pro.%0A%0ABukti%20Transfer:%20[Lampirkan%20Foto/Screenshot]%0AHardware%20ID%20saya:%20" target="_blank" rel="noopener" class="btn btn-whatsapp-step">
-                  <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
-                    <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0012.04 2zm.01 18.06c-1.49 0-2.95-.4-4.22-1.15l-.3-.18-3.13.82.83-3.05-.2-.31a8.03 8.03 0 01-1.23-4.28c0-4.45 3.62-8.08 8.08-8.08 2.16 0 4.19.84 5.71 2.37 1.53 1.53 2.37 3.56 2.37 5.72-.01 4.47-3.64 8.09-8.11 8.09zm4.43-6.07c-.24-.12-1.44-.71-1.66-.79-.22-.08-.39-.12-.55.12-.16.24-.63.79-.77.95-.14.16-.28.18-.53.06-.24-.12-1.03-.38-1.96-1.21-.72-.64-1.21-1.44-1.35-1.68-.14-.24-.02-.37.11-.49.11-.11.24-.28.37-.43.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.55-1.33-.76-1.82-.2-.48-.41-.41-.56-.42h-.48c-.16 0-.43.06-.66.31-.22.24-.87.85-.87 2.08 0 1.22.89 2.41 1.02 2.57.12.16 1.76 2.68 4.25 3.76.59.26 1.06.41 1.42.53.6.19 1.14.16 1.57.1.48-.07 1.44-.59 1.64-1.16.2-.57.2-1.06.14-1.16-.06-.1-.22-.16-.46-.28z"/>
-                  </svg>
-                  <span>Kirim Konfirmasi via WhatsApp (+62 856-4118-4229)</span>
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <!-- Step 4 -->
-          <div class="step-card">
-            <div class="step-number-col">
-              <div class="step-circle finish">4</div>
-            </div>
-            <div class="step-content">
-              <div class="step-badge finish-badge">Langkah Terakhir</div>
-              <h3 class="step-title">Masukkan Serial Key &amp; Software Aktif Permanen!</h3>
-              <p class="step-text">
-                Dalam hitungan menit setelah konfirmasi diterima, developer akan membalas dengan <strong>Serial Key Resmi</strong> Anda.
-              </p>
-              <ol class="step-substeps">
-                <li>Buka kembali jendela <strong>Aktivasi</strong> di Universal Converter Pro.</li>
-                <li>Tempelkan (Paste) Serial Key yang Anda terima ke dalam kotak <strong>"Masukkan Serial Key Lisensi"</strong>.</li>
-                <li>Klik tombol hijau <strong>"⚡ Aktifkan Lisensi Sekarang"</strong>.</li>
-                <li>Selesai! Tanda centang hijau akan muncul dan software Anda resmi aktif <strong>PERMANEN SEUMUR HIDUP (Lifetime)</strong> tanpa batas waktu!</li>
-              </ol>
-
-              <div class="step-success-card">
-                <div class="success-icon">🎉</div>
-                <div>
-                  <strong>Selamat!</strong> Anda bebas menggunakan seluruh fitur konversi dokumen, Excel auto-fit F4, Word, dan gambar tanpa batasan selamanya, bebas internet, dan tanpa biaya bulanan lagi!
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- LIVE INTERACTIVE ACTIVATION SIMULATOR -->
-    <section class="section simulator-section">
-      <div class="container">
-        <div class="simulator-wrapper">
-          <div class="simulator-intro">
-            <span class="badge-pill">Simulasi Interaktif</span>
-            <h2>Lihat Betapa Mudahnya Tampilan Aktivasi di Komputer Anda</h2>
-            <p>
-              Coba simulasi interaktif di samping ini persis seperti yang ada di dalam aplikasi <strong>Universal Converter Pro</strong>. Tidak ada instalasi rumit, tidak butuh login akun, dan tidak perlu koneksi internet.
-            </p>
-            <div class="sim-benefits-list">
-              <div class="sim-benefit">
-                <span class="check-bullet">✔</span>
-                <span>Hardware ID dibuat otomatis oleh mesin Anda</span>
-              </div>
-              <div class="sim-benefit">
-                <span class="check-bullet">✔</span>
-                <span>1 Klik langsung tersalin rapi ke clipboard</span>
-              </div>
-              <div class="sim-benefit">
-                <span class="check-bullet">✔</span>
-                <span>Verifikasi RSA-2048 berjalan seketika secara offline</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Interactive Window Mockup -->
-          <div class="simulator-window">
-            <div class="sim-window-header">
-              <div class="window-controls">
-                <span class="ctrl-dot dot-close"></span>
-                <span class="ctrl-dot dot-min"></span>
-                <span class="ctrl-dot dot-max"></span>
-              </div>
-              <span class="sim-title">Aktivasi Lisensi &amp; Informasi Pembayaran Resmi</span>
-            </div>
-
-            <div class="sim-window-body">
-              <div class="sim-field-group">
-                <label for="demoHwid">Hardware ID (ID Unik Komputer Anda):</label>
-                <div class="sim-input-row">
-                  <input type="text" id="demoHwid" value="A1AF-9630-2186-DCF1" readonly>
-                  <button type="button" class="btn btn-sm btn-secondary" id="btnCopyDemoHwid">
-                    📋 Salin ID
-                  </button>
-                </div>
-                <small class="sim-hint">* ID ini otomatis terkunci dengan perangkat Anda untuk keamanan lisensi.</small>
-              </div>
-
-              <div class="sim-field-group">
-                <label for="demoSerial">Masukkan Serial Key Lisensi:</label>
-                <textarea id="demoSerial" rows="3" placeholder="Tempelkan (Paste) Serial Key yang Anda dapatkan dari developer di sini..."></textarea>
-                <button type="button" class="btn-text-action" id="btnInsertDemoKey">
-                  Contoh: Isi Otomatis Contoh Serial Key Resmi
-                </button>
-              </div>
-
-              <div class="sim-feedback-msg" id="simStatusMsg">
-                <!-- Dynamic feedback text -->
-              </div>
-
-              <button type="button" class="btn btn-primary btn-block" id="btnSimulateActivate">
-                ⚡ Aktifkan Lisensi Sekarang
-              </button>
-
-              <div class="sim-info-box">
-                <p><strong>💡 Informasi Lisensi:</strong></p>
-                <p>• Lisensi berlaku permanen tanpa biaya bulanan.</p>
-                <p>• Bekerja 100% offline tanpa perlu koneksi internet.</p>
-                <p>• Gratis pembaruan dan bantuan teknis dari developer.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- OFFICIAL PAYMENT & DEVELOPER CONTACT -->
-    <section class="section payment-section" id="pembayaran">
-      <div class="container">
-        <div class="section-header text-center">
-          <span class="badge-pill">Informasi Pembayaran</span>
-          <h2 class="section-title">Kanal Transaksi Resmi &amp; Kontak Langsung Developer</h2>
-          <p class="section-subtitle">
-            Seluruh transaksi pembayaran diproses langsung ke rekening resmi pengembang tanpa perantara.
-          </p>
-        </div>
-
-        <div class="payment-grid-layout">
-          <!-- Pricing & Package Card -->
-          <div class="pricing-card highlight-card">
-            <div class="pricing-badge">🔥 PALING POPULER &amp; HEMAT</div>
-            <h3 class="pricing-plan">Lisensi Resmi Lifetime</h3>
-            <p class="pricing-desc">Akses penuh seluruh fitur konversi dokumen, Excel auto-fit, gambar, dan dukungan selamanya untuk 1 PC/Laptop.</p>
-            
-            <div class="pricing-price-box">
-              <span class="price-currency">Rp</span>
-              <span class="price-value">Harga Promo Spesial</span>
-              <span class="price-period">/ 1x Bayar Permanen</span>
-            </div>
-
-            <ul class="pricing-features">
-              <li><span class="text-success">✔</span> <strong>Aktivasi Permanen Seumur Hidup</strong> (Tanpa Langganan)</li>
-              <li><span class="text-success">✔</span> <strong>100% Offline Penuh</strong> tanpa butuh internet</li>
-              <li><span class="text-success">✔</span> <strong>Excel to PDF Auto-Fit Cerdas</strong> (Bebas Kolom Terpotong)</li>
-              <li><span class="text-success">✔</span> <strong>Dukungan Kertas Resmi Indonesia</strong> (F4 Folio, A4, A3, Legal)</li>
-              <li><span class="text-success">✔</span> <strong>Konversi Dokumen Lengkap</strong> (Word, PDF, Gambar, Icon)</li>
-              <li><span class="text-success">✔</span> <strong>Garansi Aktivasi Ulang</strong> jika komputer di-install ulang</li>
-              <li><span class="text-success">✔</span> <strong>Konsultasi &amp; Bantuan Langsung</strong> dengan Pengembang</li>
-            </ul>
-
-            <a href="https://wa.me/6285641184229?text=Halo%20Mas%20Zainul,%20saya%20mau%20order%20Lisensi%20Permanen%20Universal%20Converter%20Pro%20v1.0.0.%20Berapa%20harga%20promo%20terbaiknya%20hari%20ini?" target="_blank" rel="noopener" class="btn btn-primary btn-block btn-lg" id="pricingOrderBtn">
-              <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
-                <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0012.04 2zm.01 18.06c-1.49 0-2.95-.4-4.22-1.15l-.3-.18-3.13.82.83-3.05-.2-.31a8.03 8.03 0 01-1.23-4.28c0-4.45 3.62-8.08 8.08-8.08 2.16 0 4.19.84 5.71 2.37 1.53 1.53 2.37 3.56 2.37 5.72-.01 4.47-3.64 8.09-8.11 8.09zm4.43-6.07c-.24-.12-1.44-.71-1.66-.79-.22-.08-.39-.12-.55.12-.16.24-.63.79-.77.95-.14.16-.28.18-.53.06-.24-.12-1.03-.38-1.96-1.21-.72-.64-1.21-1.44-1.35-1.68-.14-.24-.02-.37.11-.49.11-.11.24-.28.37-.43.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.55-1.33-.76-1.82-.2-.48-.41-.41-.56-.42h-.48c-.16 0-.43.06-.66.31-.22.24-.87.85-.87 2.08 0 1.22.89 2.41 1.02 2.57.12.16 1.76 2.68 4.25 3.76.59.26 1.06.41 1.42.53.6.19 1.14.16 1.57.1.48-.07 1.44-.59 1.64-1.16.2-.57.2-1.06.14-1.16-.06-.1-.22-.16-.46-.28z"/>
-              </svg>
-              <span>Hubungi Developer via WhatsApp</span>
-            </a>
-
-            <div class="pricing-footer-note">
-              <span>💳 Melayani Pembelian Instansi, Sekolah &amp; Pribadi</span>
-            </div>
-          </div>
-
-          <!-- Bank & Account Detail Card -->
-          <div class="bank-accounts-card">
-            <div class="card-header-pill">
-              <span class="owner-tag">Atas Nama Resmi Semua Rekening:</span>
-              <span class="owner-name">MUHAMMAD ZAINUL MAARIF</span>
-            </div>
-
-            <div class="bank-list">
-              <!-- Mandiri -->
-              <div class="bank-row">
-                <div class="bank-badge-col">
-                  <span class="bank-label mandiri-label">MANDIRI</span>
-                </div>
-                <div class="bank-number-col">
-                  <span class="num-display">1840013197478</span>
-                  <span class="num-owner">a.n. MUHAMMAD ZAINUL MAARIF</span>
-                </div>
-                <div class="bank-action-col">
-                  <button class="btn btn-sm btn-outline-copy" data-copy="1840013197478">
-                    <span>Salin</span>
-                  </button>
-                </div>
-              </div>
-
-              <!-- BNI -->
-              <div class="bank-row">
-                <div class="bank-badge-col">
-                  <span class="bank-label bni-label">BNI</span>
-                </div>
-                <div class="bank-number-col">
-                  <span class="num-display">983633207</span>
-                  <span class="num-owner">a.n. MUHAMMAD ZAINUL MAARIF</span>
-                </div>
-                <div class="bank-action-col">
-                  <button class="btn btn-sm btn-outline-copy" data-copy="983633207">
-                    <span>Salin</span>
-                  </button>
-                </div>
-              </div>
-
-              <!-- DANA / SHOPEE -->
-              <div class="bank-row">
-                <div class="bank-badge-col">
-                  <span class="bank-label dana-label">DANA / SHOPEE</span>
-                </div>
-                <div class="bank-number-col">
-                  <span class="num-display">085641184229</span>
-                  <span class="num-owner">a.n. MUHAMMAD ZAINUL MAARIF</span>
-                </div>
-                <div class="bank-action-col">
-                  <button class="btn btn-sm btn-outline-copy" data-copy="085641184229">
-                    <span>Salin</span>
-                  </button>
-                </div>
-              </div>
-
-              <!-- PAYPAL -->
-              <div class="bank-row">
-                <div class="bank-badge-col">
-                  <span class="bank-label paypal-label">PAYPAL</span>
-                </div>
-                <div class="bank-number-col">
-                  <span class="num-display">zainuelflash9@gmail.com</span>
-                  <span class="num-owner">a.n. MUHAMMAD ZAINUL MAARIF</span>
-                </div>
-                <div class="bank-action-col">
-                  <button class="btn btn-sm btn-outline-copy" data-copy="zainuelflash9@gmail.com">
-                    <span>Salin</span>
-                  </button>
-                </div>
-              </div>
-            </div>
-
-            <!-- Direct Contact Buttons Row -->
-            <div class="direct-contact-section">
-              <h4>Hubungi Pengembang Resmi:</h4>
-              <div class="contact-buttons-group">
-                <a href="https://wa.me/6285641184229" target="_blank" rel="noopener" class="contact-pill wa-pill">
-                  <span class="pill-dot">🟢</span>
-                  <span>WhatsApp: <strong>+6285641184229</strong></span>
-                </a>
-                <a href="https://t.me/+6285641184229" target="_blank" rel="noopener" class="contact-pill tg-pill">
-                  <span class="pill-dot">🔵</span>
-                  <span>Telegram: <strong>+6285641184229</strong></span>
-                </a>
-                <a href="mailto:zainuelflash9@gmail.com" class="contact-pill mail-pill">
-                  <span class="pill-dot">✉️</span>
-                  <span>Email: <strong>zainuelflash9@gmail.com</strong></span>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- FAQ SECTION (PANDUAN MENJAWAB KERAGUAN & OBJECTION HANDLING) -->
-    <section class="section faq-section" id="faq">
-      <div class="container faq-container">
-        <div class="section-header text-center">
-          <span class="badge-pill">FAQ</span>
-          <h2 class="section-title">Pertanyaan yang Sering Diajukan</h2>
-          <p class="section-subtitle">
-            Temukan jawaban lengkap seputar keamanan, fitur, instalasi, dan lisensi Universal Converter Pro.
-          </p>
-        </div>
-
-        <div class="accordion-list">
-          <!-- FAQ 1 -->
-          <div class="accordion-item">
-            <button class="accordion-header" aria-expanded="false">
-              <span>Apakah software ini aman dari virus? Mengapa installernya sangat kecil (cuma 2.8 MB)?</span>
-              <span class="accordion-icon">+</span>
-            </button>
-            <div class="accordion-content">
-              <p>
-                <strong>100% aman, bersih, dan bebas adware/malware!</strong> Universal Converter Pro dibangun murni menggunakan teknologi resmi Microsoft .NET Framework tanpa dependensi bloated atau injeksi iklan pihak ketiga. Ukuran 2.84 MB justru membuktikan struktur kode yang sangat efisien dan teroptimasi, sehingga tidak membebani RAM maupun ruang penyimpanan hard disk komputer Anda.
-              </p>
-            </div>
-          </div>
-
-          <!-- FAQ 2 -->
-          <div class="accordion-item">
-            <button class="accordion-header" aria-expanded="false">
-              <span>Apakah software ini benar-benar bisa bekerja tanpa internet sama sekali?</span>
-              <span class="accordion-icon">+</span>
-            </button>
-            <div class="accordion-content">
-              <p>
-                <strong>Ya, 100% OFFLINE!</strong> Universal Converter Pro dirancang dari awal untuk bekerja mandiri secara lokal. Bahkan proses aktivasi Serial Key pun sama sekali tidak memerlukan koneksi internet, karena sistem validasi menggunakan tanda tangan kriptografis asimetris RSA-2048 yang dieksekusi langsung di komputer Anda. Data rapor, gaji, dan dokumen rahasia Anda dijamin tidak akan pernah bocor ke internet.
-              </p>
-            </div>
-          </div>
-
-          <!-- FAQ 3 -->
-          <div class="accordion-item">
-            <button class="accordion-header" aria-expanded="false">
-              <span>Bagaimana jika laptop saya di-install ulang Windows atau ganti hard disk? Apakah lisensi hangus?</span>
-              <span class="accordion-icon">+</span>
-            </button>
-            <div class="accordion-content">
-              <p>
-                <strong>Tenang saja, lisensi Anda bergaransi!</strong> Jika laptop Anda di-install ulang Windows atau mengalami penggantian perangkat keras pada komputer yang sama, cukup hubungi developer via WhatsApp dengan menyertakan bukti pembelian lama dan Hardware ID yang baru. Kami akan memberikan Serial Key baru secara <strong>GRATIS</strong>!
-              </p>
-            </div>
-          </div>
-
-          <!-- FAQ 4 -->
-          <div class="accordion-item">
-            <button class="accordion-header" aria-expanded="false">
-              <span>Ukuran kertas apa saja yang didukung untuk konversi Excel ke PDF?</span>
-              <span class="accordion-icon">+</span>
-            </button>
-            <div class="accordion-content">
-              <p>
-                Software ini secara khusus menyertakan ukuran kertas standar yang paling sering digunakan di Indonesia, yaitu <strong>F4 / Folio (215 x 330 mm)</strong>, serta ukuran internasional seperti <strong>A4, A3, Legal, dan Letter</strong>. Fitur Smart Auto-Fit akan secara otomatis menyesuaikan proporsi tabel agar pas sempurna pada kertas yang Anda pilih tanpa ada kolom yang terpotong.
-              </p>
-            </div>
-          </div>
-
-          <!-- FAQ 5 -->
-          <div class="accordion-item">
-            <button class="accordion-header" aria-expanded="false">
-              <span>Apakah ada biaya langganan bulanan atau tahunan?</span>
-              <span class="accordion-icon">+</span>
-            </button>
-            <div class="accordion-content">
-              <p>
-                <strong>TIDAK ADA biaya langganan!</strong> Anda hanya cukup membayar sekali (Lifetime License) dan software dapat digunakan selamanya tanpa batas waktu kadaluarsa.
-              </p>
-            </div>
-          </div>
-
-          <!-- FAQ 6 -->
-          <div class="accordion-item">
-            <button class="accordion-header" aria-expanded="false">
-              <span>Bagaimana prosedur pemesanan untuk instansi pemerintahan atau sekolah yang membutuhkan dokumen penawaran?</span>
-              <span class="accordion-icon">+</span>
-            </button>
-            <div class="accordion-content">
-              <p>
-                Kami melayani pembelian lisensi institusi untuk sekolah, madrasah, kantor dinas, dan perusahaan swasta dengan penerbitan surat penawaran resmi, kuitansi, dan faktur digital. Silakan hubungi langsung developer Muhammad Zainul Maarif via WhatsApp di <code>+6285641184229</code> atau email <code>zainuelflash9@gmail.com</code>.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- FINAL CALL TO ACTION SECTION -->
-    <section class="section final-cta-section">
-      <div class="container text-center final-cta-container">
-        <span class="badge-pill pulse">Mulai Sekarang Tanpa Ragu</span>
-        <h2 class="final-cta-title">Siap Menyelesaikan Masalah Konversi Dokumen Anda Hari Ini?</h2>
-        <p class="final-cta-desc">
-          Download sekarang dan coba langsung kehebatan fitur Auto-Fit Excel ke PDF serta konversi dokumen offline dengan <strong>Trial Gratis 24 Jam</strong>.
+        <h1 class="hero-headline">
+          The <span class="text-gradient">100% Offline</span> Batch Document &amp; Image Converter
+        </h1>
+        <p class="hero-lead">
+          Stop uploading sensitive company contracts, financial sheets, and client files to cloud converters. Process, merge, split, and convert 50+ formats locally on your Windows PC with zero server latency, zero data leaks, and zero recurring monthly fees.
         </p>
 
-        <div class="final-cta-buttons">
-          <a href="https://github.com/universalpdfsoft/universalconverterpro/releases/download/v1.0.0/UniversalConverterPro_Setup.exe" class="btn btn-primary btn-lg" download id="footerDownloadBtn">
-            <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
+        <div class="hero-cta-group">
+          <a href="https://github.com/universalpdfsoft/doc-converter-pro/releases/download/v1.0.0/UniversalConverterPro_Setup.exe" class="btn btn-primary btn-hero-primary" download id="heroDownloadBtn">
+            <svg class="icon-svg" viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
               <path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM17 13l-5 5-5-5h3V9h4v4h3z"/>
             </svg>
-            <span>Download Installer Resmi (.EXE)</span>
+            <span>Download Installer v1.0.0</span>
           </a>
-
-          <a href="https://wa.me/6285641184229?text=Halo%20Mas%20Zainul,%20saya%20tertarik%20untuk%20aktivasi%20Universal%20Converter%20Pro%20v1.0.0" target="_blank" rel="noopener" class="btn btn-secondary btn-lg" id="footerWaBtn">
-            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" class="whatsapp-color">
-              <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0012.04 2zm.01 18.06c-1.49 0-2.95-.4-4.22-1.15l-.3-.18-3.13.82.83-3.05-.2-.31a8.03 8.03 0 01-1.23-4.28c0-4.45 3.62-8.08 8.08-8.08 2.16 0 4.19.84 5.71 2.37 1.53 1.53 2.37 3.56 2.37 5.72-.01 4.47-3.64 8.09-8.11 8.09zm4.43-6.07c-.24-.12-1.44-.71-1.66-.79-.22-.08-.39-.12-.55.12-.16.24-.63.79-.77.95-.14.16-.28.18-.53.06-.24-.12-1.03-.38-1.96-1.21-.72-.64-1.21-1.44-1.35-1.68-.14-.24-.02-.37.11-.49.11-.11.24-.28.37-.43.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.55-1.33-.76-1.82-.2-.48-.41-.41-.56-.42h-.48c-.16 0-.43.06-.66.31-.22.24-.87.85-.87 2.08 0 1.22.89 2.41 1.02 2.57.12.16 1.76 2.68 4.25 3.76.59.26 1.06.41 1.42.53.6.19 1.14.16 1.57.1.48-.07 1.44-.59 1.64-1.16.2-.57.2-1.06.14-1.16-.06-.1-.22-.16-.46-.28z"/>
-            </svg>
-            <span>Konsultasi &amp; Order Lisensi (WhatsApp)</span>
+          <a href="redeem.html" class="btn btn-appsumo btn-hero-secondary">
+            <span>🔑 Redeem AppSumo Code</span>
           </a>
         </div>
 
-        <div class="final-links-row">
-          <a href="https://github.com/universalpdfsoft/universalconverterpro/releases/tag/v1.0.0" target="_blank" rel="noopener">Catatan Rilis GitHub (Release Tag v1.0.0)</a>
-          <span>•</span>
-          <a href="#panduan">Tata Cara Aktivasi</a>
-          <span>•</span>
-          <a href="#pembayaran">Daftar Rekening Pembayaran</a>
+        <div class="hero-specs-pill">
+          <span>⚡ Lightweight (~2.8 MB)</span>
+          <span class="sep">•</span>
+          <span>🛡️ 100% Offline Local Processing</span>
+          <span class="sep">•</span>
+          <span>💻 Windows 7 SP1 to 11 Compatible</span>
         </div>
       </div>
-    </section>
-  </main>
 
-  <!-- SITE FOOTER -->
-  <footer class="site-footer">
-    <div class="container footer-content">
-      <div class="footer-brand-col">
-        <div class="footer-logo">
-          <img src="logo.png" alt="Logo" width="36" height="36">
-          <span class="footer-title">Universal Converter Pro</span>
+      <div class="hero-visual">
+        <div class="app-mockup-frame">
+          <img src="banner.png" alt="Universal Converter Pro Interface Preview" class="mockup-img" width="560" height="350">
         </div>
-        <p class="footer-bio">
-          Software Desktop Konverter Dokumen &amp; Gambar No. 1 di Indonesia dengan pemrosesan 100% offline, perlindungan privasi data tingkat tinggi, dan presisi cetak F4 Folio.
-        </p>
-        <p class="footer-dev-credit">
-          Dikembangkan oleh <strong>Muhammad Zainul Maarif</strong>.
-        </p>
-      </div>
-
-      <div class="footer-links-col">
-        <h5>Tautan Cepat</h5>
-        <ul>
-          <li><a href="https://github.com/universalpdfsoft/universalconverterpro/releases/download/v1.0.0/UniversalConverterPro_Setup.exe" download>Download Setup v1.0.0 (.EXE)</a></li>
-          <li><a href="https://github.com/universalpdfsoft/universalconverterpro/releases/tag/v1.0.0" target="_blank" rel="noopener">GitHub Release Notes</a></li>
-          <li><a href="#panduan">Panduan Instalasi &amp; Aktivasi</a></li>
-          <li><a href="#pembayaran">Metode Pembayaran Resmi</a></li>
-          <li><a href="#faq">Pertanyaan &amp; Jawaban (FAQ)</a></li>
-        </ul>
-      </div>
-
-      <div class="footer-contact-col">
-        <h5>Hubungi Langsung</h5>
-        <ul>
-          <li>
-            <span>WhatsApp:</span> 
-            <a href="https://wa.me/6285641184229" target="_blank" rel="noopener">+62 856-4118-4229</a>
-          </li>
-          <li>
-            <span>Telegram:</span> 
-            <a href="https://t.me/+6285641184229" target="_blank" rel="noopener">+62 856-4118-4229</a>
-          </li>
-          <li>
-            <span>Email:</span> 
-            <a href="mailto:zainuelflash9@gmail.com">zainuelflash9@gmail.com</a>
-          </li>
-          <li>
-            <span>Developer:</span> 
-            <strong>Muhammad Zainul Maarif</strong>
-          </li>
-        </ul>
       </div>
     </div>
+  </section>
 
-    <div class="footer-bottom">
-      <div class="container footer-bottom-inner">
-        <p>&copy; 2026 Universal Converter Pro. All rights reserved. Dikembangkan di Indonesia.</p>
-        <p class="footer-github-note">Hosted on GitHub Pages • Official Release v1.0.0</p>
+  <!-- Core Features Section -->
+  <section class="section" id="features">
+    <div class="container">
+      <div class="section-header">
+        <span class="badge-pill">Core Capabilities</span>
+        <h2 class="section-title">Built for Speed, Privacy &amp; Heavy Batch Work</h2>
+        <p class="section-subtitle">Process hundreds of documents simultaneously with multi-threaded offline efficiency.</p>
+      </div>
+
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon-wrap">🔒</div>
+          <h3 class="feature-title">100% Offline Privacy</h3>
+          <p class="feature-desc">All conversions execute natively on your PC hardware. No files or metadata ever leave your computer or touch cloud servers.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon-wrap">📊</div>
+          <h3 class="feature-title">Smart Spreadsheet Formatting</h3>
+          <p class="feature-desc">Auto-fit Excel rows &amp; columns to standard paper formats (A4, F4/Folio, A3, Legal) with zero clipped columns.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon-wrap">📑</div>
+          <h3 class="feature-title">Complete PDF Toolkit</h3>
+          <p class="feature-desc">Merge multiple PDF documents, split custom page ranges, compress file sizes, and extract high-resolution image assets.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon-wrap">🔍</div>
+          <h3 class="feature-title">Offline Neural OCR</h3>
+          <p class="feature-desc">Extract editable, searchable text from scanned paperwork, receipts, and image files without internet access.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon-wrap">🖼️</div>
+          <h3 class="feature-title">Image Optimizer &amp; Converter</h3>
+          <p class="feature-desc">Convert and compress between JPG, PNG, WEBP, and TIFF. Strip unnecessary EXIF metadata for maximum privacy.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon-wrap">⚡</div>
+          <h3 class="feature-title">Ultra-Lightweight &amp; Fast</h3>
+          <p class="feature-desc">Compact 2.8 MB installer with instant launch times. Smooth multi-threaded batch operations on Windows 7 to 11.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Product Screenshots Gallery -->
+  <section class="section" id="screenshots" style="background: rgba(15, 23, 42, 0.4);">
+    <div class="container">
+      <div class="section-header">
+        <span class="badge-pill">Real Interface</span>
+        <h2 class="section-title">Designed for Clean, Distraction-Free Work</h2>
+        <p class="section-subtitle">Take a closer look at the actual tools inside Universal Converter Pro.</p>
+      </div>
+
+      <div class="gallery-grid">
+        <div class="gallery-card">
+          <img src="screenshot_1_batch_converter.jpg" alt="Batch Document Converter Queue" loading="lazy">
+          <div class="gallery-card-body">
+            <h3 class="gallery-card-title">Multi-Threaded Batch Conversion</h3>
+            <p class="gallery-card-desc">Queue multiple document formats (Word, Excel, PowerPoint, PDF) and process them concurrently in seconds.</p>
+          </div>
+        </div>
+
+        <div class="gallery-card">
+          <div class="gallery-card-body">
+            <h3 class="gallery-card-title">Visual PDF Toolkit</h3>
+            <p class="gallery-card-desc">Drag-and-drop page visual reordering, multi-file merging, range splitting, and lossless document compression.</p>
+          </div>
+          <img src="screenshot_2_pdf_toolkit.jpg" alt="PDF Merge and Split Toolkit" loading="lazy">
+        </div>
+
+        <div class="gallery-card">
+          <img src="screenshot_3_image_converter.jpg" alt="Image Optimizer and Format Converter" loading="lazy">
+          <div class="gallery-card-body">
+            <h3 class="gallery-card-title">Image Optimization &amp; Modern WEBP</h3>
+            <p class="gallery-card-desc">Lossy or lossless compression, resolution presets, and EXIF metadata stripping for secure web deployment.</p>
+          </div>
+        </div>
+
+        <div class="gallery-card">
+          <div class="gallery-card-body">
+            <h3 class="gallery-card-title">Offline OCR Text Extractor</h3>
+            <p class="gallery-card-desc">Instant text extraction from non-searchable PDFs and scanned document photos directly to your clipboard.</p>
+          </div>
+          <img src="screenshot_4_ocr_text_extractor.jpg" alt="Offline OCR Text Extraction Tool" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing Tiers Section -->
+  <section class="section" id="pricing">
+    <div class="container">
+      <div class="section-header">
+        <span class="badge-pill">AppSumo Lifetime Deal</span>
+        <h2 class="section-title">Simple One-Time Purchase. No Subscriptions.</h2>
+        <p class="section-subtitle">Buy once, keep forever. All tiers include 60-day money-back guarantee.</p>
+      </div>
+
+      <div class="pricing-grid">
+        <!-- Tier 1 -->
+        <div class="pricing-card">
+          <h3 style="font-size: 1.25rem; font-weight: 700; color: #f8fafc;">Tier 1 / Single</h3>
+          <p style="color: #94a3b8; font-size: 0.88rem; margin-top: 4px;">For solo professionals &amp; freelancers</p>
+          <div style="margin-top: 20px;">
+            <span class="price-num">$29</span>
+            <span class="price-original">$99</span>
+          </div>
+          <ul class="tier-features">
+            <li>
+              <svg width="18" height="18" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              <span><strong>1 PC</strong> Lifetime Activation</span>
+            </li>
+            <li>
+              <svg width="18" height="18" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              <span>All 50+ document &amp; image formats</span>
+            </li>
+            <li>
+              <svg width="18" height="18" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              <span>Batch multi-threaded conversion</span>
+            </li>
+            <li>
+              <svg width="18" height="18" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              <span>Complete PDF toolkit &amp; OCR</span>
+            </li>
+            <li>
+              <svg width="18" height="18" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              <span>Lifetime updates included</span>
+            </li>
+          </ul>
+          <a href="redeem.html" class="btn btn-appsumo" style="text-align: center; border-radius: 10px; padding: 12px;">Redeem Code</a>
+        </div>
+
+        <!-- Tier 2 (Popular) -->
+        <div class="pricing-card popular">
+          <div class="popular-tag">🔥 Most Popular</div>
+          <h3 style="font-size: 1.25rem; font-weight: 700; color: #f8fafc;">Tier 2 / Team</h3>
+          <p style="color: #94a3b8; font-size: 0.88rem; margin-top: 4px;">For small teams, agencies &amp; studios</p>
+          <div style="margin-top: 20px;">
+            <span class="price-num">$59</span>
+            <span class="price-original">$199</span>
+          </div>
+          <ul class="tier-features">
+            <li>
+              <svg width="18" height="18" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              <span><strong>5 PC</strong> Lifetime Activations</span>
+            </li>
+            <li>
+              <svg width="18" height="18" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              <span>Commercial client usage license</span>
+            </li>
+            <li>
+              <svg width="18" height="18" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              <span>All 50+ document &amp; image formats</span>
+            </li>
+            <li>
+              <svg width="18" height="18" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              <span>Complete PDF toolkit &amp; OCR</span>
+            </li>
+            <li>
+              <svg width="18" height="18" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              <span>Lifetime updates included</span>
+            </li>
+          </ul>
+          <a href="redeem.html" class="btn btn-appsumo" style="text-align: center; border-radius: 10px; padding: 12px;">Redeem Code</a>
+        </div>
+
+        <!-- Tier 3 -->
+        <div class="pricing-card">
+          <h3 style="font-size: 1.25rem; font-weight: 700; color: #f8fafc;">Tier 3 / VIP</h3>
+          <p style="color: #94a3b8; font-size: 0.88rem; margin-top: 4px;">For enterprises &amp; high-volume teams</p>
+          <div style="margin-top: 20px;">
+            <span class="price-num">$99</span>
+            <span class="price-original">$299</span>
+          </div>
+          <ul class="tier-features">
+            <li>
+              <svg width="18" height="18" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              <span><strong>Unlimited PC</strong> Lifetime Activations</span>
+            </li>
+            <li>
+              <svg width="18" height="18" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              <span>Full commercial &amp; agency license</span>
+            </li>
+            <li>
+              <svg width="18" height="18" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              <span>Priority 24/7 technical support</span>
+            </li>
+            <li>
+              <svg width="18" height="18" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              <span>Early access to new converter engines</span>
+            </li>
+            <li>
+              <svg width="18" height="18" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              <span>Lifetime updates included</span>
+            </li>
+          </ul>
+          <a href="redeem.html" class="btn btn-appsumo" style="text-align: center; border-radius: 10px; padding: 12px;">Redeem Code</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How to Redeem Section -->
+  <section class="section" id="how-to-redeem" style="background: rgba(17, 24, 39, 0.4);">
+    <div class="container">
+      <div class="section-header">
+        <span class="badge-pill">Self-Service Activation</span>
+        <h2 class="section-title">How to Redeem Your AppSumo Code</h2>
+        <p class="section-subtitle">Get your lifetime license activated in under 60 seconds with no waiting.</p>
+      </div>
+
+      <div class="steps-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px;">
+        <div class="feature-card">
+          <div class="feature-icon-wrap" style="background: #312e81; color: #a5b4fc;">1</div>
+          <h3 class="feature-title">Install &amp; Get HWID</h3>
+          <p class="feature-desc">Download and install the software on your Windows PC. Open the app and click "Activate Pro" to copy your unique Hardware ID.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon-wrap" style="background: #14532d; color: #86efac;">2</div>
+          <h3 class="feature-title">Generate RSA-2048 Key</h3>
+          <p class="feature-desc">Open the <a href="redeem.html" style="color: #ffbe00; font-weight: bold;">Redemption Portal</a>, enter your AppSumo voucher and Hardware ID to instantly sign your lifetime serial key.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon-wrap" style="background: #701a75; color: #f472b6;">3</div>
+          <h3 class="feature-title">Enjoy Lifetime Pro</h3>
+          <p class="feature-desc">Paste the key back into the application. All features and formats are permanently unlocked offline forever!</p>
+        </div>
+      </div>
+
+      <div style="text-align: center; margin-top: 36px;">
+        <a href="redeem.html" class="btn btn-appsumo" style="padding: 14px 32px; font-size: 1.05rem; border-radius: 12px;">
+          <span>🚀 Open Automated Redemption Portal &rarr;</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="section" id="faq">
+    <div class="container">
+      <div class="section-header">
+        <span class="badge-pill">Frequently Asked</span>
+        <h2 class="section-title">Common Questions &amp; Answers</h2>
+      </div>
+
+      <div class="faq-container">
+        <div class="accordion-item">
+          <button class="accordion-header" aria-expanded="false">
+            <span>Is this a genuine lifetime license?</span>
+            <span class="accordion-icon">+</span>
+          </button>
+          <div class="accordion-content">
+            <p>Yes, you pay once and receive lifetime access to the software. All future updates to existing features are included with no recurring subscription fees.</p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-header" aria-expanded="false">
+            <span>How is Universal Converter Pro different from online web converters?</span>
+            <span class="accordion-icon">+</span>
+          </button>
+          <div class="accordion-content">
+            <p>Online tools require uploading private files to third-party cloud servers. Universal Converter Pro processes and converts all documents 100% locally on your PC, ensuring total confidentiality.</p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-header" aria-expanded="false">
+            <span>Does the software require an active internet connection?</span>
+            <span class="accordion-icon">+</span>
+          </button>
+          <div class="accordion-content">
+            <p>No, all document conversions and PDF operations run completely offline on your computer. An internet connection is only needed once to redeem your initial license key.</p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-header" aria-expanded="false">
+            <span>What Windows versions are supported?</span>
+            <span class="accordion-icon">+</span>
+          </button>
+          <div class="accordion-content">
+            <p>Universal Converter Pro runs on both 64-bit and 32-bit versions of Windows 7, Windows 8, Windows 10, and Windows 11.</p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-header" aria-expanded="false">
+            <span>Can I move my license to a new computer if I upgrade my PC?</span>
+            <span class="accordion-icon">+</span>
+          </button>
+          <div class="accordion-content">
+            <p>Yes, you can reactivate your license on a replacement PC by generating a new key with your original AppSumo voucher on our redemption portal.</p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-header" aria-expanded="false">
+            <span>Which file formats can I convert?</span>
+            <span class="accordion-icon">+</span>
+          </button>
+          <div class="accordion-content">
+            <p>The software supports over 50 formats including PDF, Word (DOCX/DOC), Excel (XLSX/XLS), PowerPoint (PPTX), JPG, PNG, WEBP, TIFF, BMP, and SVG.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px;">
+        <div style="display: flex; align-items: center; gap: 12px;">
+          <img src="logo.png" alt="Logo" width="32" height="32" style="border-radius: 6px;">
+          <span style="font-weight: 700; color: #f8fafc;">Universal Converter Pro</span>
+          <span style="color: #64748b;">•</span>
+          <span style="color: #94a3b8; font-size: 0.88rem;">Official AppSumo Partner</span>
+        </div>
+        <div style="display: flex; gap: 16px; font-size: 0.88rem;">
+          <a href="index_id.html" style="color: #94a3b8; text-decoration: none;">🇮🇩 Versi Bahasa Indonesia</a>
+          <a href="redeem.html" style="color: #ffbe00; text-decoration: none; font-weight: 600;">Redeem License</a>
+        </div>
+      </div>
+      <div style="margin-top: 18px; border-top: 1px solid rgba(255, 255, 255, 0.08); padding-top: 16px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; font-size: 0.84rem; color: #64748b;">
+        <p>&copy; 2024–2026 Universal Software Studio. All rights reserved.</p>
+        <p>Customer Support: <a href="mailto:zainuelflash9@gmail.com" style="color: #94a3b8;">zainuelflash9@gmail.com</a></p>
       </div>
     </div>
   </footer>
-
-  <!-- FLOATING CTA FOR MOBILE -->
-  <aside class="floating-mobile-bar" aria-label="Aksi Cepat Mobile">
-    <a href="https://github.com/universalpdfsoft/universalconverterpro/releases/download/v1.0.0/UniversalConverterPro_Setup.exe" class="float-btn float-download" download>
-      <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM17 13l-5 5-5-5h3V9h4v4h3z"/></svg>
-      <span>Unduh .EXE</span>
-    </a>
-    <a href="https://wa.me/6285641184229?text=Halo%20Mas%20Zainul,%20saya%20ingin%20beli%20lisensi%20Universal%20Converter%20Pro" target="_blank" rel="noopener" class="float-btn float-wa">
-      <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0012.04 2zm.01 18.06c-1.49 0-2.95-.4-4.22-1.15l-.3-.18-3.13.82.83-3.05-.2-.31a8.03 8.03 0 01-1.23-4.28c0-4.45 3.62-8.08 8.08-8.08 2.16 0 4.19.84 5.71 2.37 1.53 1.53 2.37 3.56 2.37 5.72-.01 4.47-3.64 8.09-8.11 8.09zm4.43-6.07c-.24-.12-1.44-.71-1.66-.79-.22-.08-.39-.12-.55.12-.16.24-.63.79-.77.95-.14.16-.28.18-.53.06-.24-.12-1.03-.38-1.96-1.21-.72-.64-1.21-1.44-1.35-1.68-.14-.24-.02-.37.11-.49.11-.11.24-.28.37-.43.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.55-1.33-.76-1.82-.2-.48-.41-.41-.56-.42h-.48c-.16 0-.43.06-.66.31-.22.24-.87.85-.87 2.08 0 1.22.89 2.41 1.02 2.57.12.16 1.76 2.68 4.25 3.76.59.26 1.06.41 1.42.53.6.19 1.14.16 1.57.1.48-.07 1.44-.59 1.64-1.16.2-.57.2-1.06.14-1.16-.06-.1-.22-.16-.46-.28z"/></svg>
-      <span>Beli Lisensi</span>
-    </a>
-  </aside>
-
-  <!-- TOAST NOTIFICATION FOR COPY -->
-  <div class="toast-notification" id="toastNotification" role="alert" aria-live="polite">
-    <span class="toast-icon">📋</span>
-    <span class="toast-message" id="toastMessage">Teks berhasil disalin!</span>
-  </div>
 
   <script src="script.js"></script>
 </body>
